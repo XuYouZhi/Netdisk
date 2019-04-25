@@ -1,0 +1,1054 @@
+2019-4-16 22:26:48	test	pwd
+2019-4-16 22:26:53	test	ks
+2019-4-16 22:26:53	test	comand error,Please enter the comand agagin
+2019-4-16 22:26:55	test	ls
+2019-4-16 22:28:15	test	exit
+2019-4-16 22:28:18	xy	登录成功
+2019-4-16 22:28:18	xy	connect server success
+2019-4-16 22:33:6	test	登录成功
+2019-4-16 22:33:6	test	connect server success
+2019-4-16 22:33:11	test	pwd
+2019-4-16 22:33:12	test	ls
+2019-4-16 22:33:20	test	ls
+2019-4-16 22:33:25	test	cd file1
+2019-4-16 22:33:29	test	pwd
+2019-4-16 22:33:31	test	ls
+2019-4-16 22:33:34	test	cd ..
+2019-4-16 22:33:37	test	cd /
+2019-4-16 22:33:39	test	ls
+2019-4-16 22:33:43	test	ls
+2019-4-16 22:33:53	test	gets file
+2019-4-16 22:34:13	test	登录成功
+2019-4-16 22:34:13	test	connect server success
+2019-4-16 22:34:16	test	ls
+2019-4-16 22:35:11	test	登录成功
+2019-4-16 22:35:11	test	connect server success
+2019-4-16 22:35:13	test	pwd
+2019-4-16 22:35:15	test	ls
+2019-4-16 22:35:37	test	mkdir 20190316
+2019-4-16 22:35:38	test	ls
+2019-4-16 22:36:21	test	pwd
+2019-4-16 22:38:42	test	登录成功
+2019-4-16 22:38:42	test	connect server success
+2019-4-16 22:38:45	test	ls
+2019-4-16 22:38:47	test	pwd
+2019-4-16 22:38:50	test	gets file
+2019-4-16 23:37:39	test	登录成功
+2019-4-16 23:37:39	test	connect server success
+2019-4-16 23:37:41	test	ls
+2019-4-16 23:38:1	test	gets file
+2019-4-16 23:38:45	test	登录成功
+2019-4-16 23:38:45	test	connect server success
+2019-4-16 23:38:47	test	ls
+2019-4-16 23:38:52	test	gets file
+2019-4-16 23:41:17	test	登录成功
+2019-4-16 23:41:17	test	connect server success
+2019-4-16 23:41:18	test	ls
+2019-4-16 23:41:23	test	gets file
+2019-4-16 23:42:27	test	登录成功
+2019-4-16 23:42:27	test	connect server success
+2019-4-16 23:42:28	test	ls
+2019-4-16 23:42:30	test	pwd
+2019-4-16 23:42:33	test	ls
+2019-4-16 23:42:36	test	gets file
+2019-4-16 23:42:53	test	 输入密码错误
+2019-4-16 23:42:54	test	登录成功
+2019-4-16 23:42:54	test	connect server success
+2019-4-16 23:42:56	test	ls
+2019-4-16 23:42:59	test	gets file
+2019-4-16 23:46:14	test	登录成功
+2019-4-16 23:46:14	test	connect server success
+2019-4-16 23:46:16	test	ls
+2019-4-16 23:46:19	test	gets file
+2019-4-16 23:47:1	test	登录成功
+2019-4-16 23:47:1	test	connect server success
+2019-4-16 23:47:4	test	ls
+2019-4-16 23:47:6	test	gets file
+2019-4-16 23:49:14	test	登录成功
+2019-4-16 23:49:14	test	connect server success
+2019-4-16 23:49:17	test	ls
+2019-4-16 23:49:21	test	gets file
+2019-4-16 23:51:31	test	登录成功
+2019-4-16 23:51:31	test	connect server success
+2019-4-16 23:51:33	test	ls
+2019-4-16 23:51:41	test	get file
+2019-4-16 23:51:41	test	comand error,Please enter the comand again
+2019-4-16 23:51:46	test	gets file
+2019-4-16 23:56:10	test	登录成功
+2019-4-16 23:56:10	test	connect server success
+2019-4-16 23:56:12	test	ls
+2019-4-16 23:56:14	test	gets file
+2019-4-16 23:58:33	test	 输入密码错误
+2019-4-16 23:58:35	test	登录成功
+2019-4-16 23:58:35	test	connect server success
+2019-4-16 23:58:36	test	ls
+2019-4-16 23:58:39	test	gets file
+2019-4-16 23:59:53	test	登录成功
+2019-4-16 23:59:53	test	connect server success
+2019-4-16 23:59:55	test	ls
+2019-4-16 23:59:56	test	pwd
+2019-4-16 23:59:59	test	gets file
+2019-4-17 0:0:44	test	登录成功
+2019-4-17 0:0:44	test	connect server success
+2019-4-17 0:0:47	test	gets file
+2019-4-17 0:5:1	test	登录成功
+2019-4-17 0:5:1	test	connect server success
+2019-4-17 0:5:2	test	ls
+2019-4-17 0:5:5	test	gets file
+2019-4-17 0:22:52	test	登录成功
+2019-4-17 0:22:52	test	connect server success
+2019-4-17 0:22:57	test	ls
+2019-4-17 0:23:2	test	gets file
+2019-4-17 0:24:9	test	登录成功
+2019-4-17 0:24:9	test	connect server success
+2019-4-17 0:24:11	test	ls
+2019-4-17 0:24:14	test	gets file
+2019-4-17 0:29:38	test	登录成功
+2019-4-17 0:29:38	test	connect server success
+2019-4-17 0:29:40	test	ls
+2019-4-17 0:29:42	test	gets file
+2019-4-17 0:32:38	test	登录成功
+2019-4-17 0:32:38	test	connect server success
+2019-4-17 0:32:40	test	ls
+2019-4-17 0:32:43	test	gets file
+2019-4-17 0:41:35	test	登录成功
+2019-4-17 0:41:35	test	connect server success
+2019-4-17 0:41:37	test	ls
+2019-4-17 0:41:40	test	gets file
+2019-4-17 0:53:34	test	登录成功
+2019-4-17 0:53:34	test	connect server success
+2019-4-17 0:53:36	test	ls
+2019-4-17 0:53:47	test	ls
+2019-4-17 0:53:49	test	gets file
+2019-4-17 1:13:49	test	登录成功
+2019-4-17 1:13:49	test	connect server success
+2019-4-17 1:13:50	test	ls
+2019-4-17 1:13:57	test	pwd
+2019-4-17 1:14:0	test	ls
+2019-4-17 1:14:27	test	gets file
+2019-4-17 1:32:54	test	登录成功
+2019-4-17 1:32:54	test	connect server success
+2019-4-17 1:32:56	test	ls
+2019-4-17 1:32:59	test	gets file
+2019-4-17 1:33:20	test	登录成功
+2019-4-17 1:33:20	test	connect server success
+2019-4-17 1:33:23	test	ls
+2019-4-17 1:33:26	test	gets file
+2019-4-17 1:35:24	test	登录成功
+2019-4-17 1:35:24	test	connect server success
+2019-4-17 1:35:26	test	ls
+2019-4-17 1:35:30	test	gets file
+2019-4-17 1:35:42	test	 输入密码错误
+2019-4-17 1:35:43	test	登录成功
+2019-4-17 1:35:43	test	connect server success
+2019-4-17 1:35:53	test	ls
+2019-4-17 1:35:57	test	gets file
+2019-4-17 1:49:26	test	登录成功
+2019-4-17 1:49:26	test	connect server success
+2019-4-17 1:49:27	test	ls
+2019-4-17 1:49:30	test	gets file
+2019-4-17 1:49:56	test	 输入密码错误
+2019-4-17 1:49:57	test	登录成功
+2019-4-17 1:49:57	test	connect server success
+2019-4-17 1:50:0	test	ls
+2019-4-17 1:50:5	test	gets file
+2019-4-17 1:50:14	test	登录成功
+2019-4-17 1:50:14	test	connect server success
+2019-4-17 1:50:16	test	ls
+2019-4-17 1:50:20	test	gets file
+2019-4-17 1:52:15	test	 输入密码错误
+2019-4-17 1:52:20	test	登录成功
+2019-4-17 1:52:20	test	connect server success
+2019-4-17 1:52:21	test	ls
+2019-4-17 1:52:23	test	gets file
+2019-4-17 1:52:31	test	登录成功
+2019-4-17 1:52:31	test	connect server success
+2019-4-17 1:52:33	test	ls
+2019-4-17 1:52:36	test	gets file
+2019-4-17 1:58:43	test	 输入密码错误
+2019-4-17 1:58:46	test	登录成功
+2019-4-17 1:58:46	test	connect server success
+2019-4-17 1:58:51	test	ls
+2019-4-17 1:58:53	test	gets file
+2019-4-17 1:59:14	test	登录成功
+2019-4-17 1:59:14	test	connect server success
+2019-4-17 1:59:15	test	ls
+2019-4-17 1:59:19	test	gets file
+2019-4-17 1:59:35	test	登录成功
+2019-4-17 1:59:35	test	connect server success
+2019-4-17 1:59:37	test	ls
+2019-4-17 1:59:40	test	gets file
+2019-4-17 2:0:39	test	登录成功
+2019-4-17 2:0:39	test	connect server success
+2019-4-17 2:0:40	test	ls
+2019-4-17 2:0:43	test	gets file
+2019-4-17 2:1:43	test	登录成功
+2019-4-17 2:1:43	test	connect server success
+2019-4-17 2:1:45	test	ls
+2019-4-17 2:1:48	test	gets file
+2019-4-17 2:1:53	test	登录成功
+2019-4-17 2:1:53	test	connect server success
+2019-4-17 2:1:55	test	ls
+2019-4-17 2:2:1	test	登录成功
+2019-4-17 2:2:1	test	connect server success
+2019-4-17 2:2:4	test	ls
+2019-4-17 2:2:8	test	gets file
+2019-4-17 2:10:56	test	登录成功
+2019-4-17 2:10:56	test	connect server success
+2019-4-17 2:11:0	test	ls
+2019-4-17 2:11:7	test	gets file
+2019-4-17 2:11:27	test	登录成功
+2019-4-17 2:11:27	test	connect server success
+2019-4-17 2:11:29	test	ls
+2019-4-17 2:11:33	test	gets file
+2019-4-17 2:17:28	test	登录成功
+2019-4-17 2:17:28	test	connect server success
+2019-4-17 2:17:30	test	ls
+2019-4-17 2:17:33	test	gets file
+2019-4-17 2:18:19	test	登录成功
+2019-4-17 2:18:19	test	connect server success
+2019-4-17 2:18:21	test	ls
+2019-4-17 2:18:24	test	gets file
+2019-4-17 2:18:33	test	 输入密码错误
+2019-4-17 2:18:34	test	登录成功
+2019-4-17 2:18:34	test	connect server success
+2019-4-17 2:18:35	test	s
+2019-4-17 2:18:35	test	comand error,Please enter the comand again
+2019-4-17 2:18:37	test	ls
+2019-4-17 2:18:40	test	gets file
+2019-4-17 2:26:34	test	登录成功
+2019-4-17 2:26:34	test	connect server success
+2019-4-17 2:26:35	test	ls
+2019-4-17 2:26:38	test	gets file
+2019-4-17 2:27:12	test	登录成功
+2019-4-17 2:27:12	test	connect server success
+2019-4-17 2:27:15	test	ls
+2019-4-17 2:27:17	test	gets file
+2019-4-17 2:28:2	test	登录成功
+2019-4-17 2:28:2	test	connect server success
+2019-4-17 2:28:3	test	ls
+2019-4-17 2:28:6	test	gets file
+2019-4-17 2:28:15	test	登录成功
+2019-4-17 2:28:15	test	connect server success
+2019-4-17 2:28:18	test	ls
+2019-4-17 2:28:21	test	gets file
+2019-4-20 14:17:57	test	 输入密码错误
+2019-4-20 14:17:59	test	登录成功
+2019-4-20 14:17:59	test	connect server success
+2019-4-20 14:18:1	test	ls
+2019-4-20 14:18:8	test	ls
+2019-4-20 14:18:37	test	ll
+2019-4-20 14:18:37	test	comand error,Please enter the comand again
+2019-4-20 14:18:40	test	ls
+2019-4-20 14:18:48	test	remove file
+2019-4-20 14:18:49	test	ls
+2019-4-20 14:19:29	test	exit
+2019-4-20 14:19:34	xy	 输入密码错误
+2019-4-20 14:19:36	xy	 输入密码错误
+2019-4-20 14:19:37	xy	登录成功
+2019-4-20 14:19:37	xy	connect server success
+2019-4-20 14:19:51	xy	ls
+2019-4-20 14:20:5	xy	exit
+2019-4-20 14:20:11	test	登录成功
+2019-4-20 14:20:11	test	connect server success
+2019-4-20 14:20:13	test	ls
+2019-4-20 14:20:17	test	gets file
+2019-4-20 14:20:34	test	登录成功
+2019-4-20 14:20:34	test	connect server success
+2019-4-20 14:20:36	test	ls
+2019-4-20 14:20:45	test	登录成功
+2019-4-20 14:20:45	test	connect server success
+2019-4-20 14:20:49	test	ls
+2019-4-20 14:21:2	test	gets file
+2019-4-20 15:44:29	test	登录成功
+2019-4-20 15:44:29	test	connect server success
+2019-4-20 15:44:31	test	ls
+2019-4-20 15:44:35	test	gets file
+2019-4-20 15:44:50	test	登录成功
+2019-4-20 15:44:50	test	connect server success
+2019-4-20 15:44:52	test	
+2019-4-20 15:45:28	test	登录成功
+2019-4-20 15:45:28	test	connect server success
+2019-4-20 15:45:30	test	ls
+2019-4-20 15:45:33	test	gets file
+2019-4-20 16:0:23	test	登录成功
+2019-4-20 16:0:23	test	connect server success
+2019-4-20 16:0:26	test	ls
+2019-4-20 16:0:29	test	gets file2
+2019-4-20 16:59:56	test	登录成功
+2019-4-20 16:59:56	test	connect server success
+2019-4-20 17:0:2	test	ls
+2019-4-20 17:0:6	test	gets file
+2019-4-20 17:0:23	test	登录成功
+2019-4-20 17:0:23	test	connect server success
+2019-4-20 17:0:26	test	ls
+2019-4-20 17:0:30	test	gets file
+2019-4-20 17:1:5	test	登录成功
+2019-4-20 17:1:5	test	connect server success
+2019-4-20 17:1:7	test	ls
+2019-4-20 17:1:10	test	gets file
+2019-4-20 17:2:45	test	登录成功
+2019-4-20 17:2:45	test	connect server success
+2019-4-20 17:2:52	test	登录成功
+2019-4-20 17:2:52	test	connect server success
+2019-4-20 17:2:56	test	ls
+2019-4-20 17:2:58	test	gets file
+2019-4-20 17:4:4	test	 输入密码错误
+2019-4-20 17:4:7	test	登录成功
+2019-4-20 17:4:7	test	connect server success
+2019-4-20 17:4:9	test	ls
+2019-4-20 17:4:12	test	gets file
+2019-4-20 17:4:30	test	登录成功
+2019-4-20 17:4:30	test	connect server success
+2019-4-20 17:4:32	test	ls
+2019-4-20 17:4:36	test	gets file
+2019-4-20 17:42:10	test	登录成功
+2019-4-20 17:42:10	test	connect server success
+2019-4-20 17:42:12	test	ls
+2019-4-20 17:42:14	test	gets file
+2019-4-20 17:42:47	test	登录成功
+2019-4-20 17:42:47	test	connect server success
+2019-4-20 17:42:49	test	ls
+2019-4-20 17:42:52	test	gets file
+2019-4-20 17:43:0	test	登录成功
+2019-4-20 17:43:0	test	connect server success
+2019-4-20 17:43:2	test	ls
+2019-4-20 17:43:11	test	gets file
+2019-4-20 22:32:57	test	登录成功
+2019-4-20 22:32:57	test	connect server success
+2019-4-20 22:32:58	test	ls
+2019-4-20 22:33:6	test	gets test.pdf
+2019-4-20 22:36:0	test	登录成功
+2019-4-20 22:36:0	test	connect server success
+2019-4-20 22:36:9	test	ls
+2019-4-20 22:36:19	test	gets test.pdf
+2019-4-20 22:37:5	test	登录成功
+2019-4-20 22:37:5	test	connect server success
+2019-4-20 22:37:7	test	ls
+2019-4-20 22:37:8	test	ls
+2019-4-20 22:37:9	test	ls
+2019-4-20 22:37:10	test	ls
+2019-4-20 22:37:10	test	
+2019-4-20 22:39:28	test	登录成功
+2019-4-20 22:39:28	test	connect server success
+2019-4-20 22:39:29	test	ls
+2019-4-20 22:39:32	test	ll
+2019-4-20 22:39:32	test	comand error,Please enter the comand again
+2019-4-20 22:39:35	test	l
+2019-4-20 22:39:35	test	comand error,Please enter the comand again
+2019-4-20 22:39:37	test	ls
+2019-4-20 22:39:41	test	ls
+2019-4-20 22:39:47	test	ls
+2019-4-20 22:39:48	test	ls
+2019-4-20 22:39:50	test	ll
+2019-4-20 22:39:50	test	comand error,Please enter the comand again
+2019-4-20 22:39:51	test	l
+2019-4-20 22:39:51	test	comand error,Please enter the comand again
+2019-4-20 22:39:52	test	l
+2019-4-20 22:39:52	test	comand error,Please enter the comand again
+2019-4-20 22:39:53	test	ll
+2019-4-20 22:39:53	test	comand error,Please enter the comand again
+2019-4-20 22:39:54	test	l
+2019-4-20 22:39:54	test	comand error,Please enter the comand again
+2019-4-20 22:39:55	test	ll
+2019-4-20 22:39:55	test	comand error,Please enter the comand again
+2019-4-20 22:39:56	test	l
+2019-4-20 22:39:56	test	comand error,Please enter the comand again
+2019-4-20 22:39:58	test	ls
+2019-4-20 22:39:59	test	l
+2019-4-20 22:39:59	test	comand error,Please enter the comand again
+2019-4-20 22:40:0	test	
+2019-4-20 22:40:9	test	登录成功
+2019-4-20 22:40:9	test	connect server success
+2019-4-20 22:40:11	test	
+2019-4-20 22:42:5	test	登录成功
+2019-4-20 22:42:5	test	connect server success
+2019-4-20 22:42:7	test	ls
+2019-4-20 22:42:14	test	登录成功
+2019-4-20 22:42:14	test	connect server success
+2019-4-20 22:42:16	test	ls
+2019-4-20 22:42:19	test	ll
+2019-4-20 22:42:19	test	comand error,Please enter the comand again
+2019-4-20 22:42:20	test	ll
+2019-4-20 22:42:20	test	comand error,Please enter the comand again
+2019-4-20 22:42:22	test	
+2019-4-20 22:42:35	test	登录成功
+2019-4-20 22:42:35	test	connect server success
+2019-4-20 22:42:37	test	ls
+2019-4-20 22:42:39	test	l
+2019-4-20 22:42:39	test	comand error,Please enter the comand again
+2019-4-20 22:42:41	test	ll
+2019-4-20 22:42:41	test	comand error,Please enter the comand again
+2019-4-20 22:42:43	test	ls
+2019-4-20 22:42:46	test	ll
+2019-4-20 22:42:46	test	comand error,Please enter the comand again
+2019-4-20 22:42:47	test	ls
+2019-4-20 22:42:50	test	ls
+2019-4-20 22:42:55	test	ls
+2019-4-20 22:49:23	test	登录成功
+2019-4-20 22:49:23	test	connect server success
+2019-4-20 22:49:25	test	ls
+2019-4-20 22:49:29	test	gets test.pdf
+2019-4-20 22:51:25	test	登录成功
+2019-4-20 22:51:25	test	connect server success
+2019-4-20 22:51:26	test	ls
+2019-4-20 22:51:34	test	gets test.pdf
+2019-4-20 23:1:43	test	登录成功
+2019-4-20 23:1:43	test	connect server success
+2019-4-20 23:1:45	test	ls
+2019-4-20 23:1:54	test	gets test.pdf
+2019-4-20 23:5:34	test	登录成功
+2019-4-20 23:5:34	test	connect server success
+2019-4-20 23:5:36	test	ls
+2019-4-20 23:5:45	test	ls
+2019-4-20 23:5:47	test	ls
+2019-4-20 23:5:49	test	ls
+2019-4-20 23:5:52	test	ls
+2019-4-20 23:5:59	test	gets test.pdf
+2019-4-20 23:20:31	test	登录成功
+2019-4-20 23:20:31	test	connect server success
+2019-4-20 23:20:32	test	ls
+2019-4-20 23:20:34	test	ll
+2019-4-20 23:20:34	test	comand error,Please enter the comand again
+2019-4-20 23:20:42	test	gets test.pdf
+2019-4-20 23:24:22	test	登录成功
+2019-4-20 23:24:22	test	connect server success
+2019-4-20 23:24:23	test	ls
+2019-4-20 23:24:31	test	gets test.pdf
+2019-4-20 23:25:36	test	登录成功
+2019-4-20 23:25:36	test	connect server success
+2019-4-20 23:25:37	test	ls
+2019-4-20 23:25:41	test	gets test.pdf
+2019-4-20 23:25:52	test	 输入密码错误
+2019-4-20 23:25:54	test	登录成功
+2019-4-20 23:25:54	test	connect server success
+2019-4-20 23:25:55	test	ls
+2019-4-20 23:26:3	test	gets test.pdf
+2019-4-20 23:28:26	test	登录成功
+2019-4-20 23:28:26	test	connect server success
+2019-4-20 23:28:28	test	ls
+2019-4-20 23:28:39	test	ls
+2019-4-20 23:28:45	test	gets test.pdf
+2019-4-20 23:30:31	test	登录成功
+2019-4-20 23:30:31	test	connect server success
+2019-4-20 23:30:32	test	ls
+2019-4-20 23:30:38	test	gets test.pdf
+2019-4-20 23:30:40	test	ls
+2019-4-20 23:30:47	test	gets file
+2019-4-21 0:12:56	test	登录成功
+2019-4-21 0:12:56	test	connect server success
+2019-4-21 0:12:58	test	ls
+2019-4-21 0:13:13	test	remove test.pdf
+2019-4-21 0:13:16	test	l
+2019-4-21 0:13:16	test	comand error,Please enter the comand again
+2019-4-21 0:13:17	test	ls
+2019-4-21 0:13:24	test	puts test.pdf
+2019-4-21 0:13:27	test	ls
+2019-4-21 13:13:29	test	登录成功
+2019-4-21 13:13:29	test	connect server success
+2019-4-21 13:13:31	test	ls
+2019-4-21 13:13:59	test	 输入密码错误
+2019-4-21 13:14:0	test	 输入密码错误
+2019-4-21 13:14:2	test	登录成功
+2019-4-21 13:14:2	test	connect server success
+2019-4-21 13:14:17	test	登录成功
+2019-4-21 13:14:17	test	connect server success
+2019-4-21 13:14:19	test	ls
+2019-4-21 13:14:31	test	remove test.pdf
+2019-4-21 13:14:33	test	ls
+2019-4-21 13:14:39	test	puts test.pdf
+2019-4-21 13:17:28	test	登录成功
+2019-4-21 13:17:28	test	connect server success
+2019-4-21 13:17:30	test	ls
+2019-4-21 13:17:34	test	remove test.pdf
+2019-4-21 13:17:37	test	ls
+2019-4-21 13:17:43	test	puts test.pdf
+2019-4-21 13:17:46	test	ls
+2019-4-21 13:20:6	test	ls
+2019-4-21 13:20:10	test	gets test.pdf
+2019-4-21 13:34:41	test	ls
+2019-4-21 13:34:50	test	gets file.tar.gz
+2019-4-21 13:35:18	test	remove file.tar.gz
+2019-4-21 13:35:20	test	ll
+2019-4-21 13:35:20	test	comand error,Please enter the comand again
+2019-4-21 13:35:23	test	ls
+2019-4-21 13:35:28	test	puts file.tar.gz
+2019-4-21 13:35:32	test	ls
+2019-4-21 13:40:41	test	 输入密码错误
+2019-4-21 13:40:43	test	登录成功
+2019-4-21 13:40:43	test	connect server success
+2019-4-21 13:40:45	test	lls
+2019-4-21 13:40:45	test	comand error,Please enter the comand again
+2019-4-21 13:40:47	test	ls
+2019-4-21 13:40:55	test	remove file.tar.gz
+2019-4-21 13:40:57	test	ls
+2019-4-21 13:41:10	test	puts file.tar.gz
+2019-4-21 13:44:31	test	登录成功
+2019-4-21 13:44:31	test	connect server success
+2019-4-21 13:44:33	test	ls
+2019-4-21 13:44:44	test	remove file.tar.gz
+2019-4-21 13:44:45	test	ls
+2019-4-21 13:44:50	test	puts file.tar.gz
+2019-4-21 13:44:53	test	ls
+2019-4-21 13:46:22	test	
+2019-4-21 13:46:29	test	登录成功
+2019-4-21 13:46:29	test	connect server success
+2019-4-21 13:46:30	test	ls
+2019-4-21 13:46:36	test	remove file.tar.gz
+2019-4-21 13:46:38	test	ls
+2019-4-21 13:46:48	test	puts file.tar.gz
+2019-4-21 13:47:14	test	exit
+2019-4-21 13:47:16	xy	登录成功
+2019-4-21 13:47:16	xy	connect server success
+2019-4-21 13:47:18	xy	ls
+2019-4-21 13:47:23	xy	pwd
+2019-4-21 13:47:24	xy	pwd
+2019-4-21 13:47:26	xy	cd ..
+2019-4-21 13:47:28	xy	ls
+2019-4-21 13:47:30	xy	pwd
+2019-4-21 13:47:32	xy	cd ..
+2019-4-21 13:47:33	xy	pwd
+2019-4-21 13:47:34	xy	ls
+2019-4-21 13:47:35	xy	
+2019-4-21 21:48:50	test	登录成功
+2019-4-21 21:48:50	test	connect server success
+2019-4-21 21:49:8	test	exit
+2019-4-21 21:49:10	xy	登录成功
+2019-4-21 21:49:10	xy	connect server success
+2019-4-21 22:55:12	(null)	
+2019-4-21 23:34:58	test	
+2019-4-21 23:43:52	test	
+2019-4-21 23:45:2	test	
+2019-4-22 8:19:41	test	
+2019-4-22 8:24:21	test	ls
+2019-4-22 8:24:27	test	xit
+2019-4-22 8:24:27	test	comand error,Please enter the comand again
+2019-4-22 10:16:29	test	ls
+2019-4-22 10:16:52	test	ls
+2019-4-22 10:39:16	test	pwd
+2019-4-22 10:39:20	test	d ..
+2019-4-22 10:39:20	test	comand error,Please enter the comand again
+2019-4-22 10:39:23	test	wd
+2019-4-22 10:39:23	test	comand error,Please enter the comand again
+2019-4-22 10:39:25	test	s
+2019-4-22 10:39:25	test	comand error,Please enter the comand again
+2019-4-22 10:39:28	test	s
+2019-4-22 10:39:28	test	comand error,Please enter the comand again
+2019-4-22 10:39:30	test	s
+2019-4-22 10:39:30	test	comand error,Please enter the comand again
+2019-4-22 14:24:13	test	ls
+2019-4-22 14:24:18	test	wd
+2019-4-22 14:24:18	test	comand error,Please enter the comand again
+2019-4-22 14:24:20	test	wd
+2019-4-22 14:24:20	test	comand error,Please enter the comand again
+2019-4-22 14:24:22	test	wd
+2019-4-22 14:24:22	test	comand error,Please enter the comand again
+2019-4-22 14:36:18	test	ls
+2019-4-22 14:47:57	test	ls
+2019-4-22 14:48:25	test	ls
+2019-4-22 14:48:34	test	wd
+2019-4-22 14:48:34	test	comand error,Please enter the comand again
+2019-4-22 14:53:35	test	ls
+2019-4-22 15:5:59	test	ls
+2019-4-22 15:11:50	test	ls
+2019-4-22 15:11:59	test	wd
+2019-4-22 15:11:59	test	comand error,Please enter the comand again
+2019-4-22 15:12:2	test	wd
+2019-4-22 15:12:2	test	comand error,Please enter the comand again
+2019-4-22 15:12:6	test	d 
+2019-4-22 15:12:6	test	comand error,Please enter the comand again
+2019-4-22 15:23:43	test	pwd
+2019-4-22 15:23:46	test	s
+2019-4-22 15:23:46	test	comand error,Please enter the comand again
+2019-4-22 15:23:55	test	s
+2019-4-22 15:23:55	test	comand error,Please enter the comand again
+2019-4-22 15:23:59	test	d ..
+2019-4-22 15:23:59	test	comand error,Please enter the comand again
+2019-4-22 15:24:2	test	wd
+2019-4-22 15:24:2	test	comand error,Please enter the comand again
+2019-4-22 15:24:4	test	wd
+2019-4-22 15:24:4	test	comand error,Please enter the comand again
+2019-4-22 15:24:5	test	wd
+2019-4-22 15:24:5	test	comand error,Please enter the comand again
+2019-4-22 15:24:42	test	pwd
+2019-4-22 15:24:46	test	s
+2019-4-22 15:24:46	test	comand error,Please enter the comand again
+2019-4-22 15:24:48	test	s
+2019-4-22 15:24:48	test	comand error,Please enter the comand again
+2019-4-22 15:24:50	test	ls
+2019-4-22 15:24:55	test	s
+2019-4-22 15:24:55	test	comand error,Please enter the comand again
+2019-4-22 15:24:57	test	s
+2019-4-22 15:24:57	test	comand error,Please enter the comand again
+2019-4-22 15:24:58	test	s
+2019-4-22 15:24:58	test	comand error,Please enter the comand again
+2019-4-22 15:25:0	test	ls
+2019-4-22 15:25:2	test	wd
+2019-4-22 15:25:2	test	comand error,Please enter the comand again
+2019-4-22 15:27:49	test	
+2019-4-22 15:29:39	test	ls
+2019-4-22 15:29:44	test	
+2019-4-22 15:29:55	test	ls
+2019-4-22 15:30:3	test	pwd
+2019-4-22 15:30:51	test	ls
+2019-4-22 15:30:53	test	pwd
+2019-4-22 15:30:56	test	cd ..
+2019-4-22 15:30:58	test	pwd
+2019-4-22 19:11:30	test	pwd
+2019-4-22 19:11:35	test	ls
+2019-4-22 19:11:45	test	mkdir videos
+2019-4-22 19:11:47	test	ls
+2019-4-22 19:11:58	test	cd videos
+2019-4-22 19:11:59	test	ls
+2019-4-22 19:12:2	test	pwd
+2019-4-22 19:14:2	test	cd
+2019-4-22 19:15:59	xuyouzhi	ls
+2019-4-22 19:16:1	xuyouzhi	pwd
+2019-4-22 19:16:45	xuyouzhi	exit
+2019-4-22 19:23:25	xuyouzhi	1
+2019-4-22 19:23:25	xuyouzhi	comand error,Please enter the comand again
+2019-4-22 19:23:28	xuyouzhi	pwd
+2019-4-22 19:23:32	xuyouzhi	exit
+2019-4-22 19:24:41	test	ls
+2019-4-22 19:24:43	test	pwd
+2019-4-22 19:28:38	test	exit
+2019-4-22 19:38:27	test	ls
+2019-4-22 19:38:30	test	pwd
+2019-4-22 19:38:33	test	exit
+2019-4-22 19:39:1	test	ls
+2019-4-22 19:39:2	test	pwd
+2019-4-22 19:39:5	test	exit
+2019-4-22 19:44:13	test	ls
+2019-4-22 19:44:15	test	pwd
+2019-4-22 19:44:17	test	exit
+2019-4-22 19:52:0	test	exit
+2019-4-22 19:52:31	test	ls
+2019-4-22 19:52:32	test	pwd
+2019-4-22 19:52:34	test	exit
+2019-4-22 20:0:20	test	ls
+2019-4-22 20:0:21	test	pwd
+2019-4-22 20:0:28	test	exit
+2019-4-22 20:2:52	test	ls
+2019-4-22 20:2:53	test	wpd
+2019-4-22 20:2:53	test	comand error,Please enter the comand again
+2019-4-22 20:2:55	test	pwd
+2019-4-22 20:2:58	test	exit
+2019-4-22 20:7:10	test	ls
+2019-4-22 20:7:11	test	pwd
+2019-4-22 20:7:12	test	ls
+2019-4-22 20:7:14	test	exit
+2019-4-22 20:9:52	test	ls
+2019-4-22 20:9:54	test	pwd
+2019-4-22 20:9:59	test	exit
+2019-4-22 20:25:25	test	ls
+2019-4-22 20:25:26	test	pwd
+2019-4-22 20:25:28	test	ls
+2019-4-22 20:25:31	test	exit
+2019-4-22 20:29:10	test	ls
+2019-4-22 20:29:11	test	pwd
+2019-4-22 20:29:14	test	exit
+2019-4-22 20:29:22	test	ls
+2019-4-22 20:29:24	test	pwd
+2019-4-22 20:44:58	test	ls
+2019-4-22 20:44:59	test	pwd
+2019-4-22 20:45:3	test	exit
+2019-4-22 20:45:45	test	pwd
+2019-4-22 20:50:1	test	ls
+2019-4-22 20:50:10	test	gets file
+2019-4-22 20:50:48	test	ls
+2019-4-22 20:50:50	test	remove file
+2019-4-22 20:50:51	test	ls
+2019-4-22 20:51:12	test	puts file
+2019-4-22 21:39:20	test	pwd
+2019-4-22 21:39:21	test	ls
+2019-4-22 21:39:24	test	cd /
+2019-4-22 21:39:26	test	ls
+2019-4-22 21:39:27	test	pwd
+2019-4-22 21:39:30	test	ls
+2019-4-22 21:39:33	test	ls
+2019-4-22 21:39:40	test	cd videos
+2019-4-22 21:39:41	test	ls
+2019-4-22 21:39:43	test	ls
+2019-4-22 21:39:45	test	cd /
+2019-4-22 21:39:47	test	pwd
+2019-4-22 21:39:54	test	cd /
+2019-4-22 21:39:55	test	ls
+2019-4-22 21:39:57	test	pwd
+2019-4-22 21:40:3	test	cd ..
+2019-4-22 21:40:5	test	pwd
+2019-4-22 21:40:6	test	ls
+2019-4-22 21:40:28	test	pwd
+2019-4-22 21:40:31	test	cd ..
+2019-4-22 21:40:32	test	ls
+2019-4-22 21:40:34	test	pwd
+2019-4-22 21:42:16	test	ls
+2019-4-22 21:42:18	test	pwd
+2019-4-22 21:42:20	test	cd /
+2019-4-22 21:42:21	test	ls
+2019-4-22 21:42:24	test	pwd
+2019-4-22 21:42:26	test	cd /
+2019-4-22 21:42:29	test	ls
+2019-4-22 21:54:10	test	ls
+2019-4-22 21:54:11	test	pwd
+2019-4-22 21:54:12	test	ls
+2019-4-22 21:54:14	test	cd .
+2019-4-22 21:54:16	test	ls
+2019-4-22 21:54:20	test	cd /
+2019-4-22 21:55:30	test	ls
+2019-4-22 21:55:37	test	cd videos
+2019-4-22 21:55:55	test	pwd
+2019-4-22 21:56:33	test	cd ..
+2019-4-22 21:56:36	test	pwd
+2019-4-22 21:56:44	test	ls
+2019-4-22 21:56:49	test	cd videos
+2019-4-22 21:56:51	test	ls
+2019-4-22 21:56:56	test	cd /
+2019-4-22 21:57:0	test	ls
+2019-4-22 21:57:2	test	pwd
+2019-4-22 21:57:26	test	cd ..
+2019-4-22 21:57:27	test	pwd
+2019-4-22 21:57:31	test	ls
+2019-4-22 21:57:40	test	cd videos
+2019-4-22 21:57:48	test	cd /
+2019-4-22 22:6:26	test	ls
+2019-4-22 22:6:30	test	cd
+2019-4-22 22:7:5	test	ls
+2019-4-22 22:7:17	test	cd /
+2019-4-22 22:7:24	test	pwd
+2019-4-22 22:7:26	test	ls
+2019-4-22 22:7:33	test	cd videos
+2019-4-22 22:17:1	test	ls
+2019-4-22 22:17:3	test	pwd
+2019-4-22 22:17:4	test	cd /
+2019-4-22 22:17:7	test	pwd
+2019-4-22 22:17:13	test	cd videos
+2019-4-22 22:17:16	test	pwd
+2019-4-22 22:17:18	test	cd /
+2019-4-22 22:17:20	test	pwd
+2019-4-22 22:17:22	test	ls
+2019-4-22 22:17:47	test	cd ..
+2019-4-22 22:17:48	test	ls
+2019-4-22 22:17:50	test	cd ..
+2019-4-22 22:17:52	test	ls
+2019-4-22 22:17:54	test	cd ..
+2019-4-22 22:17:55	test	ls
+2019-4-22 22:17:58	test	cd ..
+2019-4-22 22:17:59	test	ls
+2019-4-22 22:22:55	test	ls
+2019-4-22 22:22:59	test	cd ..
+2019-4-22 22:23:0	test	pwd
+2019-4-22 22:23:22	test	ls
+2019-4-22 22:23:24	test	pwd
+2019-4-22 22:23:25	test	cd 
+2019-4-22 22:23:35	test	pwd
+2019-4-22 22:23:37	test	cd /
+2019-4-22 22:23:39	test	pwd
+2019-4-22 22:23:47	test	cd ..
+2019-4-22 22:23:48	test	pwd
+2019-4-22 23:6:31	test	ls
+2019-4-22 23:6:32	test	pwd
+2019-4-22 23:6:33	test	cd /
+2019-4-22 23:6:35	test	pwd
+2019-4-22 23:6:37	test	cd ..
+2019-4-22 23:6:38	test	ls
+2019-4-22 23:6:39	test	pwd
+2019-4-22 23:8:0	test	ls
+2019-4-22 23:8:3	test	pwd
+2019-4-22 23:8:5	test	ls
+2019-4-22 23:8:9	test	cd videos
+2019-4-22 23:8:11	test	ls
+2019-4-22 23:8:14	test	cd /
+2019-4-22 23:8:16	test	ls
+2019-4-22 23:8:19	test	pwd
+2019-4-22 23:8:22	test	cd ..
+2019-4-22 23:8:23	test	ls
+2019-4-22 23:8:25	test	wpd
+2019-4-22 23:8:25	test	comand error,Please enter the comand again
+2019-4-22 23:8:27	test	pwd
+2019-4-22 23:59:59	test	ls
+2019-4-23 0:0:59	test	ls
+2019-4-23 0:1:0	test	pwd
+2019-4-23 0:1:3	test	cd /
+2019-4-23 0:1:6	test	pwd
+2019-4-23 0:6:30	test	ls
+2019-4-23 0:6:31	test	pwd
+2019-4-23 0:6:33	test	cd /
+2019-4-23 0:6:34	test	pwd
+2019-4-23 0:6:37	test	cd ..
+2019-4-23 0:6:38	test	pwd
+2019-4-23 0:6:41	test	cd ..
+2019-4-23 0:6:43	test	pwd
+2019-4-23 0:6:44	test	ls
+2019-4-23 10:6:14	test	ls
+2019-4-23 10:6:15	test	pwd
+2019-4-23 10:6:17	test	cd /
+2019-4-23 10:6:19	test	pwd
+2019-4-23 10:6:21	test	cd ..
+2019-4-23 10:6:23	test	pwd
+2019-4-23 10:6:24	test	ls
+2019-4-23 10:6:28	test	ls
+2019-4-23 10:6:30	test	exit
+2019-4-23 10:6:41	xuyouzhi	ls
+2019-4-23 10:6:42	xuyouzhi	pwd
+2019-4-23 10:6:46	xuyouzhi	ls
+2019-4-23 10:6:48	xuyouzhi	pwd
+2019-4-23 10:7:11	xuyouzhi	exit
+2019-4-23 10:7:23	xy	ls
+2019-4-23 10:7:25	xy	ls
+2019-4-23 10:7:26	xy	pwd
+2019-4-23 10:7:27	xy	ls
+2019-4-23 10:7:33	xy	cd ..
+2019-4-23 10:7:35	xy	pwd
+2019-4-23 10:10:12	test	ls
+2019-4-23 10:12:44	test	ls
+2019-4-23 10:12:46	test	pwd
+2019-4-23 10:13:10	test	ls
+2019-4-23 10:13:18	test	ls
+2019-4-23 10:16:2	test	ls
+2019-4-23 10:16:3	test	pwd
+2019-4-23 10:16:5	test	cd ..
+2019-4-23 10:16:6	test	ls
+2019-4-23 10:16:9	test	ls
+2019-4-23 10:16:12	test	cd ..
+2019-4-23 10:16:13	test	ls
+2019-4-23 12:12:41	test	ls
+2019-4-23 12:12:56	test	remove xy
+2019-4-23 12:12:58	test	ls
+2019-4-23 12:13:6	test	cd /
+2019-4-23 12:13:23	test	ls
+2019-4-23 12:13:34	test	pwd
+2019-4-23 12:13:43	test	exit
+2019-4-23 12:14:1	test	ls
+2019-4-23 12:14:42	test	ls
+2019-4-23 12:14:45	test	gets file
+2019-4-23 12:15:2	test	gets file
+2019-4-23 12:15:27	test	puts file
+2019-4-23 12:16:4	test	ls
+2019-4-23 12:16:23	test	cd videos
+2019-4-23 12:16:24	test	ls
+2019-4-23 12:16:26	test	pwd
+2019-4-23 12:17:13	test	mkdir TestDirectory
+2019-4-23 12:17:14	test	ls
+2019-4-23 12:17:26	test	cd TestDirectory
+2019-4-23 12:17:27	test	pwd
+2019-4-23 12:17:30	test	puts file
+2019-4-23 12:17:45	test	pwd
+2019-4-23 12:17:46	test	ls
+2019-4-23 12:17:50	test	cd /
+2019-4-23 12:17:51	test	ls
+2019-4-23 12:18:7	test	cd videos
+2019-4-23 12:18:8	test	ls
+2019-4-23 12:18:11	test	ls
+2019-4-23 12:18:16	test	ls
+2019-4-23 12:18:18	test	cd TestDirectory
+2019-4-23 12:18:20	test	pwd
+2019-4-23 12:18:31	test	ls
+2019-4-23 12:18:35	test	cd /
+2019-4-23 12:18:36	test	ls
+2019-4-23 12:18:47	test	remove videos
+2019-4-23 12:18:53	test	ls
+2019-4-23 12:18:57	test	ls
+2019-4-23 12:31:49	test	mkdir vidoes
+2019-4-23 12:31:50	test	ls
+2019-4-24 0:5:45	test	ls
+2019-4-24 0:12:19	test	quit
+2019-4-24 0:12:35	test	ls
+2019-4-24 0:13:1	test	ls
+2019-4-24 0:13:3	test	quit
+2019-4-24 0:13:11	test	ls
+2019-4-24 0:13:12	test	ls
+2019-4-24 0:13:13	test	pwd
+2019-4-24 0:13:15	test	quit
+2019-4-24 12:7:36	test	quit
+2019-4-24 12:7:42	test	ls
+2019-4-24 12:7:44	test	pwd
+2019-4-24 12:7:46	test	ls
+2019-4-24 12:7:49	test	exit
+2019-4-24 12:8:3	huang	ls
+2019-4-24 12:8:5	huang	pwd
+2019-4-24 12:8:7	huang	cd ..
+2019-4-24 12:8:9	huang	pwd
+2019-4-24 12:21:10	huang	ls
+2019-4-24 12:21:11	huang	pwd
+2019-4-24 12:22:30	test	ls
+2019-4-24 12:22:33	test	exit
+2019-4-24 12:22:51	test	pwd
+2019-4-24 12:22:54	test	cd ..
+2019-4-24 12:22:55	test	pwd
+2019-4-24 12:22:57	test	cd ..
+2019-4-24 12:22:59	test	cd ..
+2019-4-24 12:23:1	test	cd ..
+2019-4-24 12:23:2	test	cd /
+2019-4-24 12:23:3	test	ls
+2019-4-24 12:23:5	test	cd /
+2019-4-24 12:23:8	test	quit
+2019-4-24 12:23:28	cheng	ls
+2019-4-24 12:23:30	cheng	pwd
+2019-4-24 12:23:33	cheng	cd ..
+2019-4-24 12:23:35	cheng	pwd
+2019-4-24 12:40:31	test	ls
+2019-4-24 12:40:32	test	pwd
+2019-4-24 12:40:34	test	cd ..
+2019-4-24 12:40:36	test	pwd
+2019-4-24 12:40:51	test	cd ..
+2019-4-24 12:40:52	test	pwd
+2019-4-24 12:41:3	test	quit
+2019-4-24 12:41:10	huang	ls
+2019-4-24 12:41:11	huang	ls
+2019-4-24 12:41:34	huang	pwd
+2019-4-24 12:54:9	test	ls
+2019-4-24 12:54:11	test	ls
+2019-4-24 12:56:14	test	ls
+2019-4-24 12:57:27	test	ls
+2019-4-24 12:57:29	test	pwd
+2019-4-24 12:57:48	test	ls
+2019-4-24 12:57:49	test	wpd
+2019-4-24 12:57:49	test	comand error,Please enter the comand again
+2019-4-24 12:57:51	test	pwd
+2019-4-24 12:57:53	test	cd ..
+2019-4-24 12:57:56	test	quit
+2019-4-24 12:58:2	test	ls
+2019-4-24 12:58:4	test	ls
+2019-4-24 12:58:6	test	exit
+2019-4-24 12:58:12	test	ls
+2019-4-24 12:58:14	test	pwd
+2019-4-24 12:58:15	test	cd ..
+2019-4-24 12:58:16	test	wpd
+2019-4-24 12:58:16	test	comand error,Please enter the comand again
+2019-4-24 12:58:17	test	pwd
+2019-4-24 12:58:19	test	sl
+2019-4-24 12:58:19	test	comand error,Please enter the comand again
+2019-4-24 12:58:21	test	ls
+2019-4-24 12:58:23	test	quit
+2019-4-24 12:58:35	huang	pwd
+2019-4-24 12:58:36	huang	sl
+2019-4-24 12:58:36	huang	comand error,Please enter the comand again
+2019-4-24 12:58:37	huang	ls
+2019-4-24 12:58:38	huang	pwd
+2019-4-24 12:58:39	huang	ls
+2019-4-24 12:58:40	huang	cd ..
+2019-4-24 12:58:42	huang	ls
+2019-4-24 12:58:43	huang	ls
+2019-4-24 12:58:45	huang	cd ..
+2019-4-24 12:58:45	huang	ls
+2019-4-24 12:58:46	huang	ls
+2019-4-24 12:58:47	huang	ls
+2019-4-24 12:58:49	huang	cd ..
+2019-4-24 12:58:51	huang	cd /
+2019-4-24 12:58:54	huang	mkdir file
+2019-4-24 12:58:56	huang	ls
+2019-4-24 12:59:1	huang	quit
+2019-4-24 12:59:6	test	ls
+2019-4-24 12:59:46	test	quit
+2019-4-24 12:59:51	huang	ls
+2019-4-24 12:59:54	huang	exit
+2019-4-24 13:0:0	test	ls
+2019-4-24 13:0:9	test	cd file
+2019-4-24 13:0:11	test	pwd
+2019-4-24 13:41:35	test	ls
+2019-4-24 13:41:38	test	ls
+2019-4-24 13:42:9	test	quit
+2019-4-24 13:42:17	test	exit
+2019-4-24 13:42:24	huang	ls
+2019-4-24 13:42:32	huang	exit
+2019-4-24 13:42:35	test	ls
+2019-4-24 13:42:37	test	pwd
+2019-4-24 13:42:38	test	ls
+2019-4-24 13:42:40	test	cd ..
+2019-4-24 13:42:44	test	cd /
+2019-4-24 13:42:45	test	ls
+2019-4-24 13:42:46	test	ls
+2019-4-24 13:42:48	test	quit
+2019-4-24 13:42:55	huang	ls
+2019-4-24 13:42:58	huang	ls
+2019-4-24 13:43:1	huang	ls
+2019-4-24 13:43:2	huang	pwd
+2019-4-24 13:43:31	test	ls
+2019-4-24 13:43:32	test	put
+2019-4-24 13:43:32	test	comand error,Please enter the comand again
+2019-4-24 13:43:36	test	pwd
+2019-4-24 13:43:39	test	mkdir file
+2019-4-24 13:43:40	test	ls
+2019-4-24 13:43:43	test	cd file
+2019-4-24 13:43:44	test	ls
+2019-4-24 13:43:46	test	pwd
+2019-4-24 13:43:53	test	quit
+2019-4-24 13:43:58	huang	ls
+2019-4-24 13:43:59	huang	pwd
+2019-4-24 13:46:0	test	pwd
+2019-4-24 13:46:7	test	ls
+2019-4-24 13:46:10	test	quit
+2019-4-24 13:46:16	huang	pwd
+2019-4-24 13:57:5	test	pwd
+2019-4-24 13:57:7	test	cd ..
+2019-4-24 13:57:9	test	wpd
+2019-4-24 13:57:9	test	comand error,Please enter the comand again
+2019-4-24 13:57:10	test	pwd
+2019-4-24 13:57:12	test	cd ..
+2019-4-24 13:57:12	test	pwd
+2019-4-24 13:57:15	test	quit
+2019-4-24 13:57:22	huang	ls
+2019-4-24 13:57:24	huang	ls
+2019-4-24 13:57:40	huang	exit
+2019-4-24 13:57:44	test	
+2019-4-24 13:57:59	test	exit
+2019-4-24 13:58:4	huang	pwd
+2019-4-24 14:0:17	test	ls
+2019-4-24 14:0:20	test	quit
+2019-4-24 14:0:29	test	exit
+2019-4-24 14:8:19	test	ls
+2019-4-24 14:8:22	test	cd ..
+2019-4-24 14:8:23	test	pwd
+2019-4-24 14:8:25	test	ls
+2019-4-24 14:9:11	test	pwd
+2019-4-24 14:9:27	test	mkdir file_t
+2019-4-24 14:9:28	test	ls
+2019-4-24 14:9:31	test	cd ..
+2019-4-24 14:9:33	test	exit
+2019-4-24 14:9:38	huang	ls
+2019-4-24 14:9:39	huang	pwd
+2019-4-24 14:9:40	huang	cd ..
+2019-4-24 14:9:41	huang	wpd
+2019-4-24 14:9:41	huang	comand error,Please enter the comand again
+2019-4-24 14:9:43	huang	pwd
+2019-4-24 14:9:43	huang	ld
+2019-4-24 14:9:43	huang	comand error,Please enter the comand again
+2019-4-24 14:9:45	huang	ls
+2019-4-24 14:9:47	huang	cd ..
+2019-4-24 14:9:49	huang	exit
+2019-4-24 14:9:56	test	ls
+2019-4-24 14:21:30	test	pwd
+2019-4-24 14:21:32	test	cd ..
+2019-4-24 14:21:33	test	pwd
+2019-4-24 14:21:35	test	cd ..
+2019-4-24 14:21:36	test	pwd
+2019-4-24 14:21:38	test	cd /
+2019-4-24 14:21:39	test	ls
+2019-4-24 14:21:55	test	quit
+2019-4-24 14:22:1	test	pwd
+2019-4-24 14:22:6	test	exit
+2019-4-24 14:22:11	huang	pwd
+2019-4-24 14:22:12	huang	cd ..
+2019-4-24 14:22:13	huang	cd /
+2019-4-24 14:22:14	huang	ls
+2019-4-24 14:22:25	huang	ls
+2019-4-24 14:22:35	huang	mkdir file_h
+2019-4-24 14:22:36	huang	ls
+2019-4-24 14:22:41	huang	cd file_h
+2019-4-24 14:22:42	huang	ls
+2019-4-24 14:22:44	huang	pwd
+2019-4-24 14:22:47	huang	quit
+2019-4-24 14:22:51	huang	ls
+2019-4-24 14:22:55	huang	exit
+2019-4-24 14:23:0	test	ls
+2019-4-24 14:23:1	test	pwd
+2019-4-24 14:23:3	test	ls
+2019-4-24 14:23:5	test	cd file_t
+2019-4-24 14:23:6	test	ls
+2019-4-24 14:23:8	test	pwd
+2019-4-24 14:23:11	test	cd /
+2019-4-24 14:23:11	test	ls
+2019-4-24 14:23:13	test	cd ..
+2019-4-24 14:23:14	test	cd ..
+2019-4-24 14:23:16	test	pwd
+2019-4-24 14:23:19	test	quit

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <limits.h>
+#include <stdlib.h>
+int main() 
+{
+    char resolved_path[80];
+    realpath("/home/xuyouzhi/Netv1.2/server/home/test/..",resolved_path);
+    printf("resolved_path: %s\n", resolved_path);
+}

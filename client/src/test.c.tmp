@@ -1,0 +1,11 @@
+#include "../include/func.h"
+
+int main()
+{
+    char *str1="/home/xuyouzhi/Netv1.1/server/home/xy/home1/eho23/334/";
+    char *str="/xy";
+    char *ret=strstr(str1,str);
+    printf("%s\n",ret);
+    return 0;
+}
+
