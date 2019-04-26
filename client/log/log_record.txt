@@ -1052,3 +1052,51 @@
 2019-4-24 14:23:14	test	cd ..
 2019-4-24 14:23:16	test	pwd
 2019-4-24 14:23:19	test	quit
+2019-4-26 15:3:19	test	ls
+2019-4-26 15:3:20	test	pwd
+2019-4-26 15:3:22	test	cd ..
+2019-4-26 15:4:35	test	 quit
+2019-4-26 15:4:49	test	ls
+2019-4-26 15:4:53	test	ls
+2019-4-26 15:5:0	test	exit
+2019-4-26 15:5:6	huang	ls
+2019-4-26 15:6:18	test	ls
+2019-4-26 15:6:25	huang	ls
+2019-4-26 15:7:16	huang	ls
+2019-4-26 15:7:26	huang	ls
+2019-4-26 15:7:35	huang	mkdir 2019
+2019-4-26 15:7:36	huang	ls
+2019-4-26 15:7:39	huang	cd 2019
+2019-4-26 15:7:40	huang	ls
+2019-4-26 15:8:4	huang	puts file
+2019-4-26 15:8:5	huang	ls
+2019-4-26 15:8:26	huang	gets file
+2019-4-26 15:8:42	test	ls
+2019-4-26 15:8:50	test	cd /
+2019-4-26 15:8:51	test	ls
+2019-4-26 15:9:8	huang	ls
+2019-4-26 15:9:14	test	exit
+2019-4-26 15:9:20	huang	ls
+2019-4-26 15:11:19	huang	cd /
+2019-4-26 15:11:19	huang	ls
+2019-4-26 15:11:21	huang	cd ..
+2019-4-26 15:11:23	huang	cd ..
+2019-4-26 15:11:24	huang	ls
+2019-4-26 15:11:25	huang	pwd
+2019-4-26 15:11:59	huang	pwd
+2019-4-26 15:12:1	huang	ls
+2019-4-26 15:12:5	huang	cd file_h
+2019-4-26 15:12:6	huang	ls
+2019-4-26 15:12:8	huang	pwd
+2019-4-26 15:12:14	huang	ls
+2019-4-26 15:12:22	huang	ls
+2019-4-26 15:12:25	huang	cd ..
+2019-4-26 15:12:25	huang	ls
+2019-4-26 15:13:4	huang	exit
+2019-4-26 15:13:33	test	ls
+2019-4-26 15:13:35	test	cd /
+2019-4-26 15:13:37	test	cd ..
+2019-4-26 15:13:39	test	sl
+2019-4-26 15:13:39	test	comand error,Please enter the comand again
+2019-4-26 15:13:40	test	ls
+2019-4-26 15:13:45	huang	ls

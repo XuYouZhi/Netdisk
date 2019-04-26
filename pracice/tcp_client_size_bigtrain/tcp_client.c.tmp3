@@ -1,0 +1,61 @@
+#include "func.h"
+
+int recvCycle(int,char*,int);
+int main(int argc,char* argv[])
+{
+	args_check(argc,3);
+	int socketFd=socket(AF_INET,SOCK_STREAM,0);
+	ERROR_CHECK(socketFd,-1,"socket");
+	struct sockaddr_in serAddr;
+	memset(&serAddr,0,sizeof(serAddr));
+	serAddr.sin_family=AF_INET;
+	serAddr.sin_port=htons(atoi(argv[2]));//把端口转换为网络字节序
+	serAddr.sin_addr.s_addr=inet_addr(argv[1]);//把IP地址转换为网络字节序
+	int ret;
+	ret=connect(socketFd,(struct sockaddr*)&serAddr,sizeof(serAddr));
+	ERROR_CHECK(ret,-1,"connect");
+	char buf[1000]={0};
+	int dataLen;
+	//接收文件名
+	recvCycle(socketFd,(char*)&dataLen,sizeof(int));
+	recvCycle(socketFd,buf,dataLen);
+	//接文件大小
+	off_t downLoadSize,fileSize,beforeSize,fileSlice;
+	recvCycle(socketFd,(char*)&dataLen,sizeof(int));
+	recvCycle(socketFd,(char*)&fileSize,dataLen);
+	printf("fileSize=%ld\n",fileSize);
+	//接文件内容
+	int fd;
+	fd=open(buf,O_CREAT|O_RDWR,0666);
+	ERROR_CHECK(fd,-1,"open");
+	fileSlice=fileSize/100;
+	beforeSize=downLoadSize=0;
+	while(fileSize>1000)
+	{
+			ret=recvCycle(socketFd,buf,1000);
+			if(-1==ret)
+			{
+				break;
+			}
+			write(fd,buf,1000);
+			downLoadSize+=1000;
+			if(downLoadSize+1000>fileSize)
+			{
+				break;
+			}
+			if(downLoadSize-beforeSize>=fileSlice)
+			{
+				printf("\r%5.2f%s",(double)downLoadSize/fileSize*100,"%");
+				fflush(stdout);
+				beforeSize=downLoadSize;
+			}
+	}
+	//接最后一次
+	ret=recvCycle(socketFd,buf,fileSize-downLoadSize);
+	write(fd,buf,fileSize-downLoadSize);
+	printf("\r100.00%s\n","%");
+	//接结束符
+	recvCycle(socketFd,(char*)&dataLen,sizeof(int));
+	close(fd);
+	close(socketFd);
+}

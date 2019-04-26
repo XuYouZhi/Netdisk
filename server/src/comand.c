@@ -116,8 +116,7 @@ int pwdFunction(int new_fd)
     return 0;
 }
 
-
-int readConf(char *path,char *ip,char *port)
+int readConf(char *path,char *ip,char *port,int* threadNum,int* capacity)
 {
     FILE *fp;
     fp=fopen(path,"rb");
@@ -126,12 +125,22 @@ int readConf(char *path,char *ip,char *port)
     {
         perror("fopen");
     }
-    fgets(buf,sizeof(buf),fp);
+    fgets(buf,sizeof(buf),fp);      //读ip 地址
     buf[strlen(buf)-1]='\0';
     strcpy(ip,buf);
+    
     memset(buf,0,sizeof(buf));
-    fgets(buf,sizeof(buf),fp);
+    fgets(buf,sizeof(buf),fp);      //读 port 端口号
     strcpy(port,buf);
+   
+    memset(buf,0,sizeof(buf));      //读取线程池中线程个数
+    fgets(buf,sizeof(buf),fp);
+    *threadNum=atoi(buf);
+    
+    memset(buf,0,sizeof(buf));      //读缓冲队列的长度
+    fgets(buf,sizeof(buf),fp);
+    *capacity=atoi(buf);
+    return 0;
 }
 
 

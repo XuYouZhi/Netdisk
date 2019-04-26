@@ -1,6 +1,6 @@
 #ifndef __WORK_QUE__
 #define __WORK_QUE__
-#include "func.h"
+#include "head.h"
 
 typedef struct tag_node
 {
