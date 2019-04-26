@@ -1,11 +1,22 @@
 #include "../include/func.h"
+#include "../include/factory.h"
+#include "../include/work_que.h"
 int main(int argc,char *argv[])
 {
     int ret;
     ARGS_CHECK(argc,2);                  
+    Factory_t f;
+    int threadNum;
+    int capacity;
+    
     int socketFd,new_fd;
     char ip[128]={0},port[10]={0};
-    readConf(argv[1],ip,port);      //读取配置文件中的配置文件中的IP地址和端口号
+    readConf(argv[1],ip,port,&threadNum,&capacity);      //读取配置文件中的配置文件中的IP地址和端口号
+    //printf("threadNum=%d\n",threadNum);  
+    //printf("capacity=%d\n",capacity);
+    
+    //factoryInit(&f,threadNum,capacity);       //此处暂时注释掉
+    //factoryStart(&f);
     struct sockaddr_in clientAddr;
     tcpInit(&socketFd,ip,port);
     fd_set rdset;
