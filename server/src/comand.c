@@ -1,18 +1,39 @@
 #include "../include/func.h"
-int cdFunc(char *path,char *homePath,char *Home)
+int cdFunc(char *username,char *path,char *homePath,char *Home)
 {
+    pthread_mutex_t mutex;
+    pthread_mutex_init(&mutex,NULL);     //确保后续的 cd 操作是原子操作, 中途不会被打断
+    char currentPath[1024]={0};
     printf("current path0=%s\n",getcwd(NULL,0));
     if (!strcmp(path,"/"))
     {
+        memset(currentPath,0,sizeof(currentPath));
+        pthread_mutex_lock(&mutex);
+        path_query(username,currentPath);
+        chdir(currentPath);    //首先切换到当前用户所在的目录
         chdir(homePath);
+        path_update(username,homePath);
+        pthread_mutex_unlock(&mutex);
         printf("current path1=%s\n",getcwd(NULL,0));
         return 0;
     }
+    memset(currentPath,0,sizeof(currentPath));
+    pthread_mutex_lock(&mutex);
+    path_query(username,currentPath);
+    chdir(currentPath);    //首先切换到当前用户所在的目录
     chdir(path);
+    path_update(username,getcwd(NULL,0));     // 更改数据库中当前用户所处的当前路径
+    pthread_mutex_unlock(&mutex);
     printf("current path2=%s\n",getcwd(NULL,0));
     if (!strcmp(getcwd(NULL,0),Home))       //确保当前账户处于自己的home 目录下面
-    {
+    {  
+        memset(currentPath,0,sizeof(currentPath));
+        pthread_mutex_lock(&mutex);
+        path_query(username,currentPath);
+        chdir(currentPath);    //首先切换到当前用户所在的目录
         chdir(homePath);
+        path_update(username,homePath);
+        pthread_mutex_unlock(&mutex);
         printf("current path3=%s\n",getcwd(NULL,0));
     }
     return 0;
@@ -96,14 +117,21 @@ int mkdirFunction(char *path)
 {
     mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
 }
-int pwdFunction(int new_fd)
+int pwdFunction(int new_fd,char *user)
 {
     Train t;
     int ret;
-    printf("pwd part,current path=%s\n",getcwd(NULL,0));
-    chdir(".");
-    printf("pwd part,current patht=%s\n",getcwd(NULL,0));
+    pthread_mutex_t mutex;      //设置线程锁的目的是确保其他线程切换目录对当前目录不会造成影响
+    pthread_mutex_init(&mutex,NULL);
+    char currentpath[1024]={0};
+    pthread_mutex_lock(&mutex);
+    path_query(user,currentpath);
+    chdir(currentpath);
+   // printf("pwd part,current path=%s\n",getcwd(NULL,0));
+   // chdir(".");
+   // printf("pwd part,current patht=%s\n",getcwd(NULL,0));
     sprintf(t.buf,"%s",getcwd(NULL,0));
+    pthread_mutex_unlock(&mutex);
     t.datalen=strlen(t.buf);
     ret=sendCycle(new_fd,(char*)&t,4+t.datalen);     //发送当前所处路径给客户端
      if (-1==ret)

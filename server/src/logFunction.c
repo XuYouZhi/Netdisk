@@ -44,8 +44,8 @@ login:
        // printf("password=%s\n",buf);
         my_query("password",userName);
        // printf("query passwd=%s\n",userName);
-        if (!strcmp(buf,userName))
-        {
+        if (!strcmp(buf,userName))      //将客户端发送过加密过的密文与服务器端数据库中存储的密文进行比对
+        {                               //如果相同，则返回客户端' y'字符
            // printf("current path=%s\n",getcwd(NULL,0));
             ret=sendCycle(new_fd,"y",1);
             if (-1==ret)
@@ -54,18 +54,20 @@ login:
             }
            // printf("userName2=%s\n",userName2);
            //printf("current path=%s\n",getcwd(NULL,0));
-            sprintf(path,"%s/home/%s",BASE_PATH,userName2);
+            sprintf(path,"%s/Home/%s",BASE_PATH,userName2);
+            printf("logFunction part,curPath=%s\n",path);
+            path_insert(userName2,path);    //将当前登录用户所处的目录存入数据库
             chdir(path);
             //printf("logFunction part,path=%s\n",path);
            // printf("current path=%s\n",getcwd(NULL,0));
         }else
-        {
+        {                           //比对结果不相同，返回客户端'n'字符
             ret=sendCycle(new_fd,"n",1);
             if (-1==ret)
             {
                 return -1;
             }
-            ++count;
+            ++count;                    //允许三次输入密码错误
             if (count<3)
             {
                 goto login; 

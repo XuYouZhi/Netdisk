@@ -16,18 +16,19 @@ int Function(int new_fd)
      logFunction(new_fd,user);
      memset(path,0,sizeof(path));
      strcpy(home,BASE_PATH);
-     strcat(home,"/home");
-     printf("home=%s\n",Home);
+     strcat(home,"/Home");
+     printf("home=%s\n",home);
      sprintf(path,"%s/%s",home,user);       //将登录用户锁定在自己的 home 目录
+    
      while (1)
      {
           memset(comand,0,sizeof(comand));            //读取客户端发送过来的命令
           memset(buf,0,sizeof(buf));                  //buf 清空，用于接收文件名或者路径名
-          printf("new_fd=%d\n",new_fd);
+          //printf("new_fd=%d\n",new_fd);
           recvCycle(new_fd,(char*)&datalen,sizeof(int));
-          printf("datalen=%d\n",datalen);
+          //printf("datalen=%d\n",datalen);
           recvCycle(new_fd,comand,datalen);
-          printf("comand=%s\n",comand);
+         // printf("comand=%s\n",comand);
           if (!strcmp(comand,"quit"))
           {
               printf("byebye\n");
@@ -43,7 +44,7 @@ int Function(int new_fd)
           else if (!strcmp(comand,"pwd"))
           {
               printf("this is pwd part\n");
-              pwdFunction(new_fd);
+              pwdFunction(new_fd,user);
           }
           else if (!strcmp(comand,"cd"))
           {
@@ -51,7 +52,7 @@ int Function(int new_fd)
               recvCycle(new_fd,buf,datalen);
               printf("path=%s\n",path);
               printf("home=%s\n",home);
-              cdFunc(buf,path,home);       //此处代码得做调整
+              cdFunc(user,buf,path,home);       //此处代码得做调整
           }
           else if (!strcmp(comand,"gets"))
           {

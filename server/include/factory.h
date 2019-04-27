@@ -13,4 +13,7 @@ void factoryInit(pFactory_t,int,int);
 void factoryStart(pFactory_t);
 int tcpInit(int *,char *,char*);
 int Function(int new_fd);
+int path_query(char *username,char *currentPath);
+int path_insert(char *username,char* currentPath);
+int path_update(char *username,char* currentPath);
 #endif
