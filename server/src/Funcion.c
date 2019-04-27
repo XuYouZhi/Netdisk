@@ -17,7 +17,7 @@ int Function(int new_fd)
      memset(path,0,sizeof(path));
      strcpy(home,BASE_PATH);
      strcat(home,"/home");
-     printf("home=%s\n",home);
+     printf("home=%s\n",Home);
      sprintf(path,"%s/%s",home,user);       //将登录用户锁定在自己的 home 目录
      while (1)
      {

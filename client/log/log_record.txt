@@ -1100,3 +1100,61 @@
 2019-4-26 15:13:39	test	comand error,Please enter the comand again
 2019-4-26 15:13:40	test	ls
 2019-4-26 15:13:45	huang	ls
+2019-4-26 19:18:15	test	pwd
+2019-4-26 19:18:18	test	quit
+2019-4-26 19:18:35	huang	ls
+2019-4-26 19:18:37	huang	cd ..
+2019-4-26 19:18:40	huang	cd /
+2019-4-26 19:18:41	huang	ls
+2019-4-26 19:18:42	huang	pwd
+2019-4-26 19:18:43	huang	ls
+2019-4-26 19:18:44	huang	cd ..
+2019-4-26 19:18:46	huang	cd ..
+2019-4-26 19:18:47	huang	sl
+2019-4-26 19:18:47	huang	comand error,Please enter the comand again
+2019-4-26 19:18:48	huang	ls
+2019-4-26 19:18:49	huang	ls
+2019-4-26 19:18:50	huang	pwd
+2019-4-26 19:18:52	huang	cd /
+2019-4-26 19:18:53	huang	ls
+2019-4-26 19:18:55	huang	cd ..
+2019-4-26 19:18:56	huang	pwd
+2019-4-26 19:18:57	huang	quit
+2019-4-26 19:19:16	huang	quit
+2019-4-26 19:19:17	test	quit
+2019-4-26 19:19:31	huang	ls
+2019-4-26 19:19:33	huang	pwd
+2019-4-26 19:19:37	huang	ls
+2019-4-26 19:19:55	test	pwd
+2019-4-26 19:19:57	test	ls
+2019-4-26 19:19:58	test	pwd
+2019-4-26 19:20:5	test	ls
+2019-4-26 19:20:12	huang	ls
+2019-4-26 19:20:36	huang	cd file_t
+2019-4-26 19:20:37	huang	ls
+2019-4-26 19:20:39	huang	pwd
+2019-4-26 19:20:47	test	pwd
+2019-4-26 19:21:14	test	ls
+2019-4-26 19:21:17	test	cd ..
+2019-4-26 19:21:18	test	ls
+2019-4-26 19:21:28	huang	pwd
+2019-4-26 19:21:34	huang	
+2019-4-26 19:22:53	huang	
+2019-4-26 19:23:7	test	ls
+2019-4-26 19:23:9	test	pwd
+2019-4-26 19:24:10	test	pwd
+2019-4-26 19:24:14	huang	pwd
+2019-4-26 19:24:30	test	cd ..
+2019-4-26 19:24:31	test	ls
+2019-4-26 19:24:36	test	cd file_t
+2019-4-26 19:24:37	test	ls
+2019-4-26 19:24:38	test	pwd
+2019-4-26 19:24:43	test	pwd
+2019-4-26 19:24:50	huang	pwd
+2019-4-26 19:24:52	huang	ls
+2019-4-26 19:25:0	test	ls
+2019-4-26 19:25:5	test	pwd
+2019-4-26 19:25:14	huang	ls
+2019-4-26 19:25:15	huang	wpd
+2019-4-26 19:25:15	huang	comand error,Please enter the comand again
+2019-4-26 19:25:17	huang	pwd
