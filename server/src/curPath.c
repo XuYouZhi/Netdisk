@@ -108,7 +108,6 @@ int path_query1(char *username)        //用于查询当前用户在 curPath中�
 		printf("Connected...\n");
 	}
 	t=mysql_query(conn,query);
-    printf("t=%d\n",t);
 	if(t)
 	{
 		printf("Error making query:%s\n",mysql_error(conn));
@@ -118,22 +117,18 @@ int path_query1(char *username)        //用于查询当前用户在 curPath中�
 		res=mysql_use_result(conn);
 		if(res)
 		{
-            printf("I am here\n");
 			while((row=mysql_fetch_row(res))!=NULL)
 			{	
-				printf("num=%d\n",mysql_num_fields(res));//列数
+			//	printf("num=%d\n",mysql_num_fields(res));//列数
 				for(t=0;t<mysql_num_fields(res);t++)
 				{
-                    printf("this is path_query1 part=%s\n",username);
-						printf("%8s ",row[t]);      //此处输出用户当前所处路径
-				        if (strcmp(row[t],username))
-                        {
-                            return -1;
-                        }
+              //      printf("this is path_query1 part=%s\n",username);
+			//			printf("%8s ",row[t]);      //此处输出用户当前所处路径
+				       
                 }
 				printf("\n");
 			}
-            if (NULL==row)
+            if (NULL==row&&!t)
             {
                 return -1;
             }
@@ -178,18 +173,3 @@ int path_update(char *username,char* currentPath)
 	mysql_close(conn);
 	return 0;
 }
-
-
-
-
-
-
-
-//int main(int argc,char *argv[])
-//{
-//    ARGS_CHECK(argc,3);
-//    //path_insert(argv[1],argv[2]);
-//    //path_query(argv[1]);
-//    path_update(argv[1],argv[2]);
-//    return 0;
-//}

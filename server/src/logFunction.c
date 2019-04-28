@@ -65,6 +65,7 @@ login:
             }
             else
             {
+                printf("update current path into curPath table\n");
                 path_update(userName2,path);            //将当前用户所处的路径同步到curPath 表中
             }
             chdir(path);
