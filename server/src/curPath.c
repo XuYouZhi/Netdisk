@@ -44,7 +44,7 @@ int path_query(char *username,char *currentPath)        //函数中的 currentpa
 	char* user="root";
 	char* password="xyz";
 	char* database="test";//要访问的数据库名称
-	char query[300]="select path from curPath where username='";
+	char query[300]="select path from curPath where userName='";
 	sprintf(query,"%s%s'",query,username);
 	puts(query);
 	int t,r;
@@ -95,7 +95,7 @@ int path_query1(char *username)        //用于查询当前用户在 curPath中�
 	char* user="root";
 	char* password="xyz";
 	char* database="test";//要访问的数据库名称
-	char query[300]="select path from curPath where username='";
+	char query[300]="select userName from curPath where userName='";
 	sprintf(query,"%s%s'",query,username);
 	puts(query);
 	int t,r;
@@ -108,23 +108,35 @@ int path_query1(char *username)        //用于查询当前用户在 curPath中�
 		printf("Connected...\n");
 	}
 	t=mysql_query(conn,query);
+    printf("t=%d\n",t);
 	if(t)
 	{
 		printf("Error making query:%s\n",mysql_error(conn));
+        return -1;
 	}else{
 	//	printf("Query made...\n");
 		res=mysql_use_result(conn);
 		if(res)
 		{
+            printf("I am here\n");
 			while((row=mysql_fetch_row(res))!=NULL)
 			{	
-				//printf("num=%d\n",mysql_num_fields(res));//列数
+				printf("num=%d\n",mysql_num_fields(res));//列数
 				for(t=0;t<mysql_num_fields(res);t++)
 				{
+                    printf("this is path_query1 part=%s\n",username);
 						printf("%8s ",row[t]);      //此处输出用户当前所处路径
-				}
+				        if (strcmp(row[t],username))
+                        {
+                            return -1;
+                        }
+                }
 				printf("\n");
 			}
+            if (NULL==row)
+            {
+                return -1;
+            }
 		}else{
 			printf("Don't find data\n");
             return -1;          //返回-1表示在 curPath 表中没有找到对应用户的当前目录

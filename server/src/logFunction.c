@@ -57,9 +57,15 @@ login:
             sprintf(path,"%s/Home/%s",BASE_PATH,userName2);
             printf("logFunction part,curPath=%s\n",path);
             ret=path_query1(userName2);
+            printf("ret=%d\n",ret);
             if (-1==ret)
             {
+                printf("insert current path into curPath table\n");
                 path_insert(userName2,path);    //将当前登录用户所处的目录存入数据库
+            }
+            else
+            {
+                path_update(userName2,path);            //将当前用户所处的路径同步到curPath 表中
             }
             chdir(path);
             //printf("logFunction part,path=%s\n",path);
@@ -106,7 +112,7 @@ login:
         my_insert(userName,salt,password);
         //设置当前用户的home 目录
        // printf("current path=%s\n",getcwd(NULL,0));//下面采用这种手动固定给定路径，很不好，使得程序不具备移植性
-        sprintf(path,"%s/home",BASE_PATH);
+        sprintf(path,"%s/Home",BASE_PATH);
         chdir(path);             //切换到home目录下面
         mkdir(userName,0777);        //创建当前用户的小家
         chdir(userName);        //切换至当前用户下的home目录下面
