@@ -59,6 +59,11 @@ begin:
     memset(&t,0,sizeof(t));
     while (fgets(comand,sizeof(comand),stdin)!=NULL)
     {
+        if (!strcmp(comand,"\n"))
+        {
+            continue;   //如果输入的是换行符，则重新输入，提高程序的健壮性
+                        //避免程序不小心崩溃
+        }
         strcpy(comandTmp,comand);
         comandTmp[strlen(comandTmp)-1]='\0';
         

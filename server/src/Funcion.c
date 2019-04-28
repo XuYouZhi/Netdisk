@@ -39,7 +39,7 @@ int Function(int new_fd)
           {
               recvCycle(new_fd,(char*)&datalen,sizeof(int));
               recvCycle(new_fd,buf,datalen);
-              lsFunction(buf,new_fd);
+              lsFunction(buf,new_fd,user);
           }
           else if (!strcmp(comand,"pwd"))
           {
