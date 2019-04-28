@@ -67,10 +67,17 @@ void displayFileTypel(mode_t st_mode,Train *t)
         break;
     }
 }
-int lsFunction(char *argv,int new_fd)
+int lsFunction(char *argv,int new_fd,char *user)
 {
     DIR *dir;
     Train t;
+    pthread_mutex_t mutex;          //确保对其他客户端的操作不会影响到本客户端
+    pthread_mutex_init(&mutex,NULL);            
+    pthread_mutex_lock(&mutex);
+    char currentpath[1024]={0};
+    path_query(user,currentpath);
+    printf("current path=%s\n",currentpath);
+    chdir(currentpath);
     dir=opendir(argv);
     if(NULL==dir)
     {
@@ -109,6 +116,7 @@ int lsFunction(char *argv,int new_fd)
     t.datalen=0;
     sendCycle(new_fd,(char*)&t,4);
     closedir(dir);
+    pthread_mutex_unlock(&mutex);
     return 0;
 }
 

@@ -60,7 +60,8 @@ int recvFd(int,int *);
 int sendCycle(int,char*,int);
 int recvCycle(int,char*,int);
 void displayFileTypel(mode_t st_mode,Train *t);
-int lsFunction(char *argv,int new_fd);
+//int lsFunction(char *argv,int new_fd);
+int lsFunction(char *argv,int new_fd,char *user);
 int pwdFunction(int new_fd,char *user);
 int cdFunc(char* user,char *path,char *homePath,char *Home);
 int tranFile(int new_fd,char *fileName);
@@ -74,5 +75,7 @@ int my_insert(char *userName,char *salt,char *password);
 int my_query(const char *ch,char *userName);
 int path_insert(char *username,char* currentPath);
 int path_query(char *username,char *currentPath);
- int path_update(char *username,char* currentPath);
+int path_query1(char *username);
+int path_update(char *username,char* currentPath);
+
 #endif

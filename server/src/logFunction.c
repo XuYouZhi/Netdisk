@@ -56,7 +56,11 @@ login:
            //printf("current path=%s\n",getcwd(NULL,0));
             sprintf(path,"%s/Home/%s",BASE_PATH,userName2);
             printf("logFunction part,curPath=%s\n",path);
-            path_insert(userName2,path);    //将当前登录用户所处的目录存入数据库
+            ret=path_query1(userName2);
+            if (-1==ret)
+            {
+                path_insert(userName2,path);    //将当前登录用户所处的目录存入数据库
+            }
             chdir(path);
             //printf("logFunction part,path=%s\n",path);
            // printf("current path=%s\n",getcwd(NULL,0));

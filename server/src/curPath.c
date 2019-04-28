@@ -77,13 +77,63 @@ int path_query(char *username,char *currentPath)        //函数中的 currentpa
 			}
 		}else{
 			printf("Don't find data\n");
+            return -1;          //返回-1表示在 curPath 表中没有找到对应用户的当前目录
 		}
 		mysql_free_result(res);
 	}
 	mysql_close(conn);
-	return 0;
+	return 0;               //返回0表示在 curPath 表中找到对应用户当前所处的路径
 }
 
+
+int path_query1(char *username)        //用于查询当前用户在 curPath中是否有存储路径
+{
+	MYSQL *conn;
+	MYSQL_RES *res;
+	MYSQL_ROW row;
+	char* server="localhost";
+	char* user="root";
+	char* password="xyz";
+	char* database="test";//要访问的数据库名称
+	char query[300]="select path from curPath where username='";
+	sprintf(query,"%s%s'",query,username);
+	puts(query);
+	int t,r;
+	conn=mysql_init(NULL);
+	if(!mysql_real_connect(conn,server,user,password,database,0,NULL,0))
+	{
+		printf("Error connecting to database:%s\n",mysql_error(conn));
+		return -1;
+	}else{
+		printf("Connected...\n");
+	}
+	t=mysql_query(conn,query);
+	if(t)
+	{
+		printf("Error making query:%s\n",mysql_error(conn));
+	}else{
+	//	printf("Query made...\n");
+		res=mysql_use_result(conn);
+		if(res)
+		{
+			while((row=mysql_fetch_row(res))!=NULL)
+			{	
+				//printf("num=%d\n",mysql_num_fields(res));//列数
+				for(t=0;t<mysql_num_fields(res);t++)
+				{
+						printf("%8s ",row[t]);      //此处输出用户当前所处路径
+				}
+				printf("\n");
+			}
+		}else{
+			printf("Don't find data\n");
+            return -1;          //返回-1表示在 curPath 表中没有找到对应用户的当前目录
+		}
+		mysql_free_result(res);
+	}
+	mysql_close(conn);
+	return 0;               //返回0表示在 curPath 表中找到对应用户当前所处的路径
+}
 
 //对 curPath 进行修改操作
 int path_update(char *username,char* currentPath)
