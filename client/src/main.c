@@ -128,6 +128,15 @@ begin:
             }
             break;
         case 2:             //this is puts function
+            //在正式上传文件之前，先将待上传的文件的 md5发送给服务器
+            //如果服务器端应该有客户端上床过相同 md5的文件，
+            //可以通过做硬链的方式，实现秒传。
+            //秒传部分注意对进度条打印部分的处理
+            
+            
+
+
+            //如果服务器端没有存相同md5表的文件，这才真正上传文件
             ret= tranFile(socketFd,comand2);//comand2为文件名
             if (-1==ret)
             {

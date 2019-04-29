@@ -35,12 +35,13 @@
 #include <crypt.h>
 #include <shadow.h>
 #include <unistd.h>
-#include<openssl/md5.h>
+//#include <openssl/md5.h>
+#include <memory.h>
 #define ARGS_CHECK(argc,val) {if(argc!=val) {printf("error args\n");return -1;}}
 #define ERROR_PTHREAD_CHECK(ret_val,pthreadname) {if(ret_val!=0)  {printf("%s is error,error num=ret_val");return -1;}}
 #define THREAD_ERROR_CHECK(ret,funcname) {if (ret!=0){printf("%s failed,%ld\n",funcname,ret);}}
 #define	ERROR_CHECK(ret,retval,funcname) {if(retval==ret){perror(funcname);return -1;}}
-
+//这是基础路径
 #define PATH "/home/xuyouzhi/Netv1.2/client"
 typedef struct{
     pid_t pid;
