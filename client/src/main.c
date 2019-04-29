@@ -20,27 +20,6 @@ login:
     memset(userName,0,sizeof(userName));
     strcpy(userName,logFunction1(socketFd));         // 选择登录还是注册代码逻辑
     getchar();          //读走输入缓冲区中多余的换行符
-//    ret=logFunction(argv[3]);       //先进行身份验证
-//    if (-1==ret)
-//    {
-//        logRecord(argv[3]," 输入密码错误");
-//        printf("Enter passwd again.\n");
-//        goto login;
-//    }
-//    else
-//    {
-//        logRecord(argv[3],"登录成功");
-//        logRecord(argv[3],"connect server success");        //记录连接服务器成功
-//        sleep(1);
-//    }
-//        
-//    t.datalen=strlen(argv[3]);          //将当前登录的用户名发送给服务器
-//    strcpy(t.buf,argv[3]);
-//    ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
-//    if (-1==ret)
-//    {
-//        return -1;
-//    }
 begin:
     system("clear");
     printf("please enter the command\n");

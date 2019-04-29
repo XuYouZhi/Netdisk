@@ -80,10 +80,12 @@ login2:
         recvCycle(socketFd,buf,1);
         if (!strcmp(buf,"y"))
         {
+            logRecord(ch[0]," 登录成功.");
             printf("登录成功!欢迎使用!\n");
         }
         else
         {
+            logRecord(ch[0],"密码错误或用户名错误");
             printf("密码错误或用户名错误!\n");
             sleep(1);
             ++count;
@@ -94,6 +96,7 @@ login2:
             }
             else if (count>=3)
             {
+                logRecord(ch[0]," 密码输错三次");
                 exit(-1);
             }
         }
@@ -108,6 +111,7 @@ login2:
         printf("-----------------------注册新账号------------------------\n");        
         printf("请输入一个用户名(提示,此用户名将作为你的登录账号)：");
         scanf("%s",ch[0]);
+        logRecord(ch[0],"注册一个账号");
 login1:
         memset(ch[1],0,sizeof(ch[1]));
         memset(ch[2],0,sizeof(ch[2]));
