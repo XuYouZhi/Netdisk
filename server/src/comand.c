@@ -4,7 +4,7 @@ int cdFunc(char *username,char *path,char *homePath,char *Home)
     pthread_mutex_t mutex;
     pthread_mutex_init(&mutex,NULL);     //确保后续的 cd 操作是原子操作, 中途不会被打断
     char currentPath[1024]={0};
-    printf("current path0=%s\n",getcwd(NULL,0));
+    //printf("current path0=%s\n",getcwd(NULL,0));
     if (!strcmp(path,"/"))
     {
         memset(currentPath,0,sizeof(currentPath));
@@ -14,7 +14,7 @@ int cdFunc(char *username,char *path,char *homePath,char *Home)
         chdir(homePath);
         path_update(username,homePath);
         pthread_mutex_unlock(&mutex);
-        printf("current path1=%s\n",getcwd(NULL,0));
+      //  printf("current path1=%s\n",getcwd(NULL,0));
         return 0;
     }
     memset(currentPath,0,sizeof(currentPath));
@@ -24,7 +24,7 @@ int cdFunc(char *username,char *path,char *homePath,char *Home)
     chdir(path);
     path_update(username,getcwd(NULL,0));     // 更改数据库中当前用户所处的当前路径
     pthread_mutex_unlock(&mutex);
-    printf("current path2=%s\n",getcwd(NULL,0));
+    //printf("current path2=%s\n",getcwd(NULL,0));
     if (!strcmp(getcwd(NULL,0),Home))       //确保当前账户处于自己的home 目录下面
     {  
         memset(currentPath,0,sizeof(currentPath));
@@ -76,7 +76,7 @@ int lsFunction(char *argv,int new_fd,char *user)
     pthread_mutex_lock(&mutex);
     char currentpath[1024]={0};
     path_query(user,currentpath);
-    printf("current path=%s\n",currentpath);
+  //  printf("current path=%s\n",currentpath);
     chdir(currentpath);
     dir=opendir(argv);
     if(NULL==dir)
@@ -121,9 +121,16 @@ int lsFunction(char *argv,int new_fd,char *user)
 }
 
 
-int mkdirFunction(char *path)
+int mkdirFunction(char *path,char* user)
 {
+    pthread_mutex_t mutex;          //确保对其他客户端的操作不会影响到本客户端
+    pthread_mutex_init(&mutex,NULL);            
+    pthread_mutex_lock(&mutex);
+    char currentpath[1024]={0};
+    path_query(user,currentpath);
+    chdir(currentpath);
     mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    pthread_mutex_unlock(&mutex);
 }
 int pwdFunction(int new_fd,char *user)
 {

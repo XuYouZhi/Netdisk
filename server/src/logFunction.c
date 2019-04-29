@@ -55,17 +55,17 @@ login:
            // printf("userName2=%s\n",userName2);
            //printf("current path=%s\n",getcwd(NULL,0));
             sprintf(path,"%s/Home/%s",BASE_PATH,userName2);
-            printf("logFunction part,curPath=%s\n",path);
+           // printf("logFunction part,curPath=%s\n",path);
             ret=path_query1(userName2);
-            printf("ret=%d\n",ret);
+            //printf("ret=%d\n",ret);
             if (-1==ret)
             {
-                printf("insert current path into curPath table\n");
+               // printf("insert current path into curPath table\n");
                 path_insert(userName2,path);    //将当前登录用户所处的目录存入数据库
             }
             else
             {
-                printf("update current path into curPath table\n");
+                //printf("update current path into curPath table\n");
                 path_update(userName2,path);            //将当前用户所处的路径同步到curPath 表中
             }
             chdir(path);

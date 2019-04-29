@@ -3,10 +3,8 @@
 int recvFile(int socketFd,int flag)
 {
     int ret,dataLen;
-    char *path;
-    path=getcwd(NULL,0);
     char buf[1000]={0};             //将所有用户下载的文件放在此路径下
-    sprintf(buf,"%s/%s",path,"UpAndDownLoad");
+    sprintf(buf,"%s/%s",PATH,"UpAndDownLoad");
     chdir(buf);
     //接收文件名
     memset(buf,0,sizeof(buf));

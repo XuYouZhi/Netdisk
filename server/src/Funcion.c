@@ -56,19 +56,40 @@ int Function(int new_fd)
           }
           else if (!strcmp(comand,"gets"))
           {
+              pthread_mutex_t mutex;
+              pthread_mutex_init(&mutex,NULL);
+              pthread_mutex_lock(&mutex);
+              char currentpath[1024]={0};
+              path_query(user,currentpath);
+              chdir(currentpath);
               recvCycle(new_fd,(char*)&datalen,sizeof(int));
               recvCycle(new_fd,buf,datalen);
               tranFile(new_fd,buf);
+              pthread_mutex_unlock(&mutex);
           }
           else if (!strcmp(comand,"puts"))
           {
+              pthread_mutex_t mutex;
+              pthread_mutex_init(&mutex,NULL);
+              pthread_mutex_lock(&mutex);
+              char currentpath[1024]={0};
+              path_query(user,currentpath);
+              chdir(currentpath);
               recvFile(new_fd);
+              pthread_mutex_unlock(&mutex);
           }
           else if (!strcmp(comand,"remove"))
           {
+              pthread_mutex_t mutex;
+              pthread_mutex_init(&mutex,NULL);
+              pthread_mutex_lock(&mutex);
+              char currentpath[1024]={0};
+              path_query(user,currentpath);
+              chdir(currentpath);
               recvCycle(new_fd,(char*)&datalen,sizeof(int));
               recvCycle(new_fd,buf,datalen);
               remove_dir(buf);
+              pthread_mutex_unlock(&mutex);
               ERROR_CHECK(ret,-1,"remove");
           }
          else if (!strcmp(comand,"mkdir"))
@@ -76,7 +97,7 @@ int Function(int new_fd)
              recvCycle(new_fd,(char*)&datalen,sizeof(int));
              recvCycle(new_fd,buf,datalen);
              printf("buf=%s\n",buf);
-             mkdirFunction(buf);
+             mkdirFunction(buf,user);
          }
          else if (!strcmp(comand,"exit"))
          {

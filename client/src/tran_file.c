@@ -2,11 +2,9 @@
 #include "../include/progress.h"
 int tranFile(int socketFd,char *fileName)
 {
-    char *path;
-    path=getcwd(NULL,0);
     char buffer[1000]={0};                 
     //所有用户待上传的文件都存于此路径下
-    sprintf(buffer,"%s/%s",path,"UpAndDownLoad");
+    sprintf(buffer,"%s/%s",PATH,"UpAndDownLoad");
     chdir(buffer);
 
     //按上传的文件大小方式打印进度条

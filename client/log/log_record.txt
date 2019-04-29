@@ -1158,3 +1158,572 @@
 2019-4-26 19:25:15	huang	wpd
 2019-4-26 19:25:15	huang	comand error,Please enter the comand again
 2019-4-26 19:25:17	huang	pwd
+2019-4-27 17:1:46	huang	quit
+2019-4-28 0:28:24	test	ls
+2019-4-28 0:28:27	test	cd ..
+2019-4-28 0:28:30	test	cd /
+2019-4-28 0:28:31	test	pwd
+2019-4-28 0:28:33	test	ls
+2019-4-28 0:28:37	test	cd file_t
+2019-4-28 0:28:38	test	ls
+2019-4-28 0:28:40	test	pwd
+2019-4-28 0:29:3	huang	ls
+2019-4-28 0:29:5	huang	pwd
+2019-4-28 0:29:6	huang	cd ..
+2019-4-28 0:29:7	huang	pwd
+2019-4-28 0:29:12	huang	ls
+2019-4-28 0:29:16	huang	cd file_h
+2019-4-28 0:29:17	huang	ls
+2019-4-28 0:29:18	huang	pwd
+2019-4-28 0:29:21	test	pwd
+2019-4-28 0:29:23	test	ls
+2019-4-28 0:30:14	huang	cd /
+2019-4-28 0:30:15	huang	ls
+2019-4-28 0:30:18	test	pwd
+2019-4-28 0:30:25	huang	ls
+2019-4-28 0:31:12	test	quit
+2019-4-28 0:31:18	huang	quit
+2019-4-28 10:46:24	test	ls
+2019-4-28 10:46:26	test	pwd
+2019-4-28 10:46:39	huang	ls
+2019-4-28 10:46:48	huang	ls
+2019-4-28 10:46:51	huang	cd file_t
+2019-4-28 10:46:52	huang	ls
+2019-4-28 10:47:7	huang	quit
+2019-4-28 10:47:8	test	ls
+2019-4-28 10:47:13	test	pwd
+2019-4-28 10:47:14	test	ls
+2019-4-28 10:47:41	huang	ls
+2019-4-28 10:47:50	huang	cd file_h
+2019-4-28 10:47:51	huang	ls
+2019-4-28 10:47:53	huang	pwd
+2019-4-28 10:48:2	huang	cd ..
+2019-4-28 10:48:4	huang	pwd
+2019-4-28 10:48:5	huang	ls
+2019-4-28 10:48:13	test	ls
+2019-4-28 10:48:19	test	quit
+2019-4-28 10:48:22	huang	quit
+2019-4-28 14:30:33	test	ls
+2019-4-28 14:30:35	test	pwd
+2019-4-28 14:30:38	huang	pwd
+2019-4-28 14:30:39	huang	ls
+2019-4-28 14:30:41	test	ls
+2019-4-28 14:30:53	huang	ls
+2019-4-28 14:30:59	huang	pwd
+2019-4-28 14:31:1	huang	ls
+2019-4-28 14:31:5	huang	quit
+2019-4-28 14:31:11	test	ls
+2019-4-28 14:31:15	huang	ls
+2019-4-28 14:31:50	test	ls
+2019-4-28 14:36:52	huang	ls
+2019-4-28 14:36:54	test	ls
+2019-4-28 14:42:30	huang	ls
+2019-4-28 14:43:28	huang	ls
+2019-4-28 14:43:32	huang	cd file_h
+2019-4-28 14:43:33	huang	ls
+2019-4-28 14:43:34	huang	pwd
+2019-4-28 14:44:23	test	ls
+2019-4-28 14:44:25	test	pwd
+2019-4-28 14:44:32	test	cd filt_t
+2019-4-28 14:44:33	test	ls
+2019-4-28 14:44:36	test	ls
+2019-4-28 14:44:40	test	cd file_t
+2019-4-28 14:44:41	test	ls
+2019-4-28 14:44:42	test	pwd
+2019-4-28 14:44:45	huang	ls
+2019-4-28 14:44:46	huang	pwd
+2019-4-28 14:44:48	huang	pwd
+2019-4-28 14:44:49	huang	ls
+2019-4-28 14:44:50	huang	ls
+2019-4-28 14:44:50	huang	ls
+2019-4-28 14:44:51	huang	pwd
+2019-4-28 14:44:52	huang	ls
+2019-4-28 14:44:53	huang	ls
+2019-4-28 14:44:54	huang	ls
+2019-4-28 14:44:55	huang	pwd
+2019-4-28 14:44:57	huang	cd ..
+2019-4-28 14:44:58	huang	ls
+2019-4-28 14:45:0	test	ls
+2019-4-28 14:45:1	test	ls
+2019-4-28 14:45:3	test	pwd
+2019-4-28 14:45:5	test	pwd
+2019-4-28 14:45:6	test	cd ..
+2019-4-28 14:45:7	test	pwd
+2019-4-28 14:45:9	test	ls
+2019-4-28 14:45:11	huang	ls
+2019-4-28 14:45:14	huang	ls
+2019-4-28 14:45:16	huang	pwd
+2019-4-28 14:45:17	huang	ls
+2019-4-28 14:45:57	test	quit
+2019-4-28 14:45:59	huang	quit
+2019-4-28 15:2:41	test	ls
+2019-4-28 15:2:42	test	pwd
+2019-4-28 15:2:43	test	ls
+2019-4-28 15:2:47	test	cd file_t
+2019-4-28 15:2:48	test	ls
+2019-4-28 15:2:49	test	pwd
+2019-4-28 15:2:53	huang	ls
+2019-4-28 15:3:1	huang	ls
+2019-4-28 15:3:13	huang	cd file_h
+2019-4-28 15:3:14	huang	ls
+2019-4-28 15:3:15	huang	pwd
+2019-4-28 15:3:17	test	pwd
+2019-4-28 15:3:18	test	ls
+2019-4-28 15:3:19	test	s
+2019-4-28 15:3:19	test	comand error,Please enter the comand again
+2019-4-28 15:3:21	test	ls
+2019-4-28 15:3:22	test	pwd
+2019-4-28 15:3:24	huang	ls
+2019-4-28 15:3:26	huang	pwd
+2019-4-28 15:3:28	test	ls
+2019-4-28 15:3:32	test	pwd
+2019-4-28 15:3:34	huang	pwd
+2019-4-28 15:12:6	test	quit
+2019-4-28 15:12:10	huang	quit
+2019-4-28 15:13:39	test	ls
+2019-4-28 15:13:40	test	pwd
+2019-4-28 15:13:43	test	pwd
+2019-4-28 15:13:44	test	ls
+2019-4-28 15:13:45	test	ls
+2019-4-28 15:13:46	test	pwd
+2019-4-28 15:24:30	test	quit
+2019-4-28 15:24:32	huang	quit
+2019-4-28 15:24:46	huang	ls
+2019-4-28 15:24:47	huang	pwd
+2019-4-28 15:24:49	huang	cd ..
+2019-4-28 15:24:50	huang	ls
+2019-4-28 15:24:51	huang	cd /
+2019-4-28 15:24:52	huang	ls
+2019-4-28 15:24:54	huang	ls
+2019-4-28 15:24:57	huang	cd file_h
+2019-4-28 15:24:58	huang	ls
+2019-4-28 15:24:59	huang	pwd
+2019-4-28 15:25:6	huang	exit
+2019-4-28 15:25:9	huang	ls
+2019-4-28 15:25:10	huang	pd
+2019-4-28 15:25:10	huang	comand error,Please enter the comand again
+2019-4-28 15:25:12	huang	pwd
+2019-4-28 15:25:13	huang	sl
+2019-4-28 15:25:13	huang	comand error,Please enter the comand again
+2019-4-28 15:25:14	huang	ls
+2019-4-28 15:25:24	test	ls
+2019-4-28 15:25:28	test	cd file_t
+2019-4-28 15:25:30	test	ls
+2019-4-28 15:25:31	test	pwd
+2019-4-28 15:25:35	test	exit
+2019-4-28 15:25:42	test	pwd
+2019-4-28 15:25:43	test	ls
+2019-4-28 15:25:51	test	cd 2019
+2019-4-28 15:25:53	test	pwd
+2019-4-28 15:25:56	test	ls
+2019-4-28 15:26:1	test	exit
+2019-4-28 15:26:5	test	ls
+2019-4-28 15:26:6	test	pwd
+2019-4-28 15:26:8	huang	ls
+2019-4-28 15:26:9	huang	ls
+2019-4-28 15:26:30	test	quit
+2019-4-28 15:26:33	huang	quit
+2019-4-28 15:29:38	xuyou	ls
+2019-4-28 15:29:40	xuyou	pwd
+2019-4-28 15:29:51	xuyou	quit
+2019-4-28 15:31:6	cheng	ls
+2019-4-28 15:31:8	cheng	pwd
+2019-4-28 15:31:9	cheng	sl
+2019-4-28 15:31:9	cheng	comand error,Please enter the comand again
+2019-4-28 15:31:10	cheng	ls
+2019-4-28 15:36:36	cheng	quit
+2019-4-28 15:37:45	cheng	ls
+2019-4-28 15:37:46	cheng	pwd
+2019-4-28 15:38:19	cheng	pwd
+2019-4-28 15:38:20	cheng	ls
+2019-4-28 15:38:21	cheng	pwd
+2019-4-28 15:38:23	cheng	cd ..
+2019-4-28 15:38:25	cheng	ls
+2019-4-28 15:38:26	cheng	ls
+2019-4-28 15:38:31	cheng	exit
+2019-4-28 15:38:35	cheng	ls
+2019-4-28 15:38:36	cheng	pwd
+2019-4-28 15:38:38	cheng	cd ..
+2019-4-28 15:38:40	cheng	cd /
+2019-4-28 15:38:40	cheng	ls
+2019-4-28 15:38:47	cheng	mkdir huang
+2019-4-28 15:38:50	cheng	ls
+2019-4-28 15:38:53	cheng	remove huang
+2019-4-28 15:38:54	cheng	ls
+2019-4-28 15:38:59	cheng	mkdir file
+2019-4-28 15:39:1	cheng	ls
+2019-4-28 15:39:3	cheng	cd file
+2019-4-28 15:39:4	cheng	ls
+2019-4-28 15:39:5	cheng	ls
+2019-4-28 15:39:6	cheng	ls
+2019-4-28 15:39:8	cheng	ls
+2019-4-28 15:39:10	cheng	pwd
+2019-4-28 15:39:12	cheng	exit
+2019-4-28 15:39:18	cheng	ls
+2019-4-28 15:39:19	cheng	pwd
+2019-4-28 15:39:22	cheng	cd /
+2019-4-28 15:46:28	cheng	ls
+2019-4-28 15:46:29	cheng	pwd
+2019-4-28 15:51:43	cheng	quit
+2019-4-28 16:7:21	cheng	ls
+2019-4-28 16:7:23	cheng	pwd
+2019-4-28 16:7:24	cheng	ls
+2019-4-28 16:8:9	cheng	quit
+2019-4-28 16:8:15	huang	pwd
+2019-4-28 16:8:16	huang	ls
+2019-4-28 16:8:17	huang	ls
+2019-4-28 16:8:18	huang	ls
+2019-4-28 16:8:19	huang	d
+2019-4-28 16:8:19	huang	comand error,Please enter the comand again
+2019-4-28 16:8:22	huang	pwd
+2019-4-28 16:8:22	huang	ls
+2019-4-28 16:8:24	huang	pwd
+2019-4-28 16:8:25	huang	ls
+2019-4-28 16:8:30	huang	quit
+2019-4-28 16:8:41	cheng	ls
+2019-4-28 16:8:42	cheng	pwd
+2019-4-28 16:8:44	cheng	ls
+2019-4-28 16:13:15	cheng	quit
+2019-4-28 16:13:17	cheng	quit
+2019-4-28 16:13:24	cheng	ls
+2019-4-28 16:20:16	cheng	quit
+2019-4-28 16:20:30	cheng	ls
+2019-4-28 16:20:31	cheng	pwd
+2019-4-28 16:20:35	cheng	ls
+2019-4-28 16:20:37	cheng	cd ..
+2019-4-28 16:20:38	cheng	ls
+2019-4-28 16:20:40	cheng	ls
+2019-4-28 16:25:35	cheng	quit
+2019-4-28 16:25:51	cheng	ls
+2019-4-28 16:25:58	cheng	pwd
+2019-4-28 16:26:0	cheng	ls
+2019-4-28 16:26:10	cheng	ls
+2019-4-28 16:26:11	cheng	pwd
+2019-4-28 16:26:12	cheng	cd ..
+2019-4-28 16:26:13	cheng	ls
+2019-4-28 16:26:15	cheng	pwd
+2019-4-28 16:26:16	cheng	ls
+2019-4-28 16:26:36	cheng	ls
+2019-4-28 16:26:37	cheng	pwd
+2019-4-28 16:26:58	cheng	ls
+2019-4-28 16:26:59	cheng	pwd
+2019-4-28 16:27:0	cheng	ls
+2019-4-28 16:27:2	cheng	cd /
+2019-4-28 16:27:3	cheng	ls
+2019-4-28 16:27:4	cheng	ls
+2019-4-28 16:27:5	cheng	cd .
+2019-4-28 16:27:8	cheng	cd ..
+2019-4-28 16:27:9	cheng	cd /
+2019-4-28 16:27:10	cheng	ls
+2019-4-28 16:27:11	cheng	pwd
+2019-4-28 16:27:12	cheng	ls
+2019-4-28 16:27:15	cheng	cd file
+2019-4-28 16:27:16	cheng	ls
+2019-4-28 16:27:18	cheng	pwd
+2019-4-28 16:27:21	cheng	ls
+2019-4-28 16:27:23	cheng	ls
+2019-4-28 16:27:24	cheng	ls
+2019-4-28 16:27:25	cheng	ls
+2019-4-28 16:27:26	cheng	l
+2019-4-28 16:27:26	cheng	comand error,Please enter the comand again
+2019-4-28 16:27:27	cheng	ls
+2019-4-28 16:27:28	cheng	ls
+2019-4-28 16:27:30	cheng	as
+2019-4-28 16:27:30	cheng	comand error,Please enter the comand again
+2019-4-28 16:27:32	cheng	pwd
+2019-4-28 16:27:33	cheng	ls
+2019-4-28 16:44:14	cheng	quit
+2019-4-28 16:47:13	cheng	quit
+2019-4-28 16:48:38	cheng	quit
+2019-4-28 16:48:51	cheng	ls
+2019-4-28 16:48:54	cheng	pwd
+2019-4-28 16:49:15	cheng	ls
+2019-4-28 16:49:16	cheng	pwd
+2019-4-28 16:49:17	cheng	ls
+2019-4-28 16:49:18	cheng	pwd
+2019-4-28 16:49:20	cheng	cd ..
+2019-4-28 16:49:22	cheng	pwd
+2019-4-28 16:49:23	cheng	ls
+2019-4-28 16:49:26	cheng	pwd
+2019-4-28 16:49:27	cheng	ls
+2019-4-28 16:49:30	cheng	cd file
+2019-4-28 16:49:31	cheng	ls
+2019-4-28 16:49:32	cheng	pwd
+2019-4-28 16:49:35	cheng	quit
+2019-4-28 16:49:44	cheng	ls
+2019-4-28 16:49:46	cheng	pwd
+2019-4-28 16:49:48	cheng	cd file
+2019-4-28 16:49:50	cheng	pwd
+2019-4-28 16:49:52	cheng	exit
+2019-4-28 16:49:56	cheng	pwd
+2019-4-28 16:49:57	cheng	ls
+2019-4-28 16:50:0	cheng	cd ..
+2019-4-28 16:50:1	cheng	ls
+2019-4-28 16:50:6	cheng	cd /
+2019-4-28 16:50:6	cheng	ls
+2019-4-28 16:50:12	cheng	quit
+2019-4-28 16:52:53	wang	ls
+2019-4-28 16:52:54	wang	pwd
+2019-4-28 16:52:58	wang	cd .
+2019-4-28 16:53:0	wang	cd ..
+2019-4-28 16:53:3	wang	ls
+2019-4-28 16:53:4	wang	pwd
+2019-4-28 16:53:10	wang	mkdir wang_w
+2019-4-28 16:53:11	wang	ls
+2019-4-28 16:53:15	wang	cd wang_w
+2019-4-28 16:53:15	wang	ls
+2019-4-28 16:53:17	wang	pwd
+2019-4-28 16:53:20	wang	quit
+2019-4-28 16:53:25	wang	ls
+2019-4-28 16:54:25	wang	quit
+2019-4-28 17:2:50	huang	ls
+2019-4-28 17:3:6	huang	ls
+2019-4-28 17:3:8	huang	cd ..
+2019-4-28 17:3:8	huang	ls
+2019-4-28 17:3:10	huang	cd ..
+2019-4-28 17:3:12	huang	pwd
+2019-4-28 17:3:13	huang	cd /
+2019-4-28 17:3:15	huang	quit
+2019-4-28 17:3:35	wang	exit
+2019-4-28 17:3:55	zhang	ls
+2019-4-28 17:3:56	zhang	pwd
+2019-4-28 17:3:58	zhang	cd ..
+2019-4-28 17:3:59	zhang	ls
+2019-4-28 17:4:1	zhang	cd ..
+2019-4-28 17:4:4	zhang	cd /
+2019-4-28 17:4:4	zhang	ls
+2019-4-28 17:4:5	zhang	pwd
+2019-4-28 17:4:12	zhang	exit
+2019-4-28 17:4:18	zhang	ls
+2019-4-28 17:14:22	zhang	quit
+2019-4-28 17:16:31	test	ls
+2019-4-28 17:16:34	huang	ls
+2019-4-28 17:16:36	huang	pwd
+2019-4-28 17:16:40	test	pwd
+2019-4-28 17:16:41	test	ls
+2019-4-28 17:16:43	test	ls
+2019-4-28 17:16:46	huang	ls
+2019-4-28 17:17:1	huang	remove xuyou
+2019-4-28 17:17:2	huang	ls
+2019-4-28 17:17:4	test	ls
+2019-4-28 17:17:5	test	wpd
+2019-4-28 17:17:5	test	comand error,Please enter the comand again
+2019-4-28 17:17:6	test	pwd
+2019-4-28 17:17:7	test	ls
+2019-4-28 17:17:23	huang	ls
+2019-4-28 17:17:42	huang	gets file
+2019-4-28 17:19:17	test	ls
+2019-4-28 17:19:21	test	pwd
+2019-4-28 17:19:26	huang	ls
+2019-4-28 17:19:29	huang	gets file
+2019-4-28 17:20:25	test	puts file
+2019-4-28 17:20:45	test	ls
+2019-4-28 17:22:6	huang	ls
+2019-4-28 17:22:17	huang	ls
+2019-4-28 17:22:27	huang	mdkir 2019_h
+2019-4-28 17:22:27	huang	comand error,Please enter the comand again
+2019-4-28 17:22:28	huang	ls
+2019-4-28 17:22:33	test	ls
+2019-4-28 17:22:36	huang	ls
+2019-4-28 17:22:39	huang	cd ..
+2019-4-28 17:22:40	huang	ls
+2019-4-28 17:23:3	huang	mkdir 2019_h
+2019-4-28 17:23:4	huang	ls
+2019-4-28 17:23:8	test	ls
+2019-4-28 17:23:11	huang	ls
+2019-4-28 17:23:13	huang	pwd
+2019-4-28 17:23:14	huang	ld
+2019-4-28 17:23:14	huang	comand error,Please enter the comand again
+2019-4-28 17:23:15	huang	ls
+2019-4-28 17:23:17	huang	ls
+2019-4-28 17:23:24	huang	cd 2019_h
+2019-4-28 17:23:24	huang	ls
+2019-4-28 17:23:25	huang	pwd
+2019-4-28 17:23:35	huang	mkdir 201901_h
+2019-4-28 17:23:36	huang	ls
+2019-4-28 17:23:39	test	ls
+2019-4-28 17:23:41	test	ls
+2019-4-28 17:23:47	test	ls
+2019-4-28 17:23:53	test	mkdir 2019_t
+2019-4-28 17:23:53	test	ls
+2019-4-28 17:23:57	huang	pwd
+2019-4-28 17:23:58	huang	ls
+2019-4-28 17:24:0	huang	cd ..
+2019-4-28 17:24:1	huang	ls
+2019-4-28 17:26:23	huang	ls
+2019-4-28 17:26:30	huang	cd 2019_h
+2019-4-28 17:26:30	huang	ls
+2019-4-28 17:26:33	test	ls
+2019-4-28 17:26:36	test	pwd
+2019-4-28 17:26:37	test	ls
+2019-4-28 17:26:45	huang	ls
+2019-4-28 17:26:46	huang	cd ..
+2019-4-28 17:26:48	huang	ls
+2019-4-28 17:27:0	huang	remove file
+2019-4-28 17:27:1	huang	ls
+2019-4-28 17:27:7	test	remove 2019_t
+2019-4-28 17:27:8	test	ls
+2019-4-28 17:27:11	test	ls
+2019-4-28 17:27:15	huang	ls
+2019-4-28 17:27:23	huang	pwd
+2019-4-28 17:44:19	huang	quit
+2019-4-28 17:44:21	test	quit
+2019-4-28 17:44:33	test	ls
+2019-4-28 17:44:35	huang	ls
+2019-4-28 17:44:46	test	cd 2019_t
+2019-4-28 17:44:47	test	ls
+2019-4-28 17:44:48	test	ls
+2019-4-28 17:44:49	test	pwd
+2019-4-28 17:44:52	test	ls
+2019-4-28 17:45:9	test	mkdir 201901_t
+2019-4-28 17:45:9	test	ls
+2019-4-28 17:45:13	test	cd ..
+2019-4-28 17:45:14	test	ls
+2019-4-28 17:45:23	test	remove 2019_t
+2019-4-28 17:45:24	test	ls
+2019-4-28 17:45:26	huang	ls
+2019-4-28 17:45:28	huang	pwd
+2019-4-28 17:45:29	huang	ls
+2019-4-28 17:45:31	huang	cd ..
+2019-4-28 17:45:32	huang	pwd
+2019-4-28 17:45:34	huang	ls
+2019-4-28 17:45:41	test	ls
+2019-4-28 17:46:59	test	ls
+2019-4-28 17:47:4	huang	ls
+2019-4-28 17:47:9	huang	gets file
+2019-4-28 17:47:24	test	ls
+2019-4-28 17:47:30	huang	ls
+2019-4-28 17:47:33	huang	remove file
+2019-4-28 17:47:35	test	ls
+2019-4-28 17:47:37	test	ls
+2019-4-28 17:47:38	test	pwd
+2019-4-28 17:47:39	test	ls
+2019-4-28 17:47:41	huang	ls
+2019-4-28 17:47:45	huang	ls
+2019-4-28 17:47:45	huang	ls
+2019-4-28 17:47:46	huang	ls
+2019-4-28 17:47:47	huang	ls
+2019-4-28 17:47:48	huang	ls
+2019-4-28 17:47:54	huang	cd file_h
+2019-4-28 17:47:55	huang	ls
+2019-4-28 17:47:59	huang	gets file
+2019-4-28 17:48:12	huang	ls
+2019-4-28 17:48:13	huang	ls
+2019-4-28 17:48:19	huang	cd file_h
+2019-4-28 17:48:20	huang	ls
+2019-4-28 17:48:34	huang	puts file
+2019-4-28 17:48:54	test	ls
+2019-4-28 17:48:58	test	pwd
+2019-4-28 17:49:0	test	pwd
+2019-4-28 17:49:2	test	ls
+2019-4-28 17:49:13	huang	ls
+2019-4-28 17:49:16	huang	pwd
+2019-4-28 17:49:18	huang	ls
+2019-4-28 17:49:20	huang	cd /
+2019-4-28 17:49:21	huang	ls
+2019-4-28 17:49:32	huang	cd file_h
+2019-4-28 17:49:32	huang	ls
+2019-4-28 17:49:34	huang	cd ..
+2019-4-28 17:49:37	test	ls
+2019-4-28 17:49:42	test	cd 2019
+2019-4-28 17:49:43	test	ls
+2019-4-28 17:49:45	test	pwd
+2019-4-28 17:49:53	test	ls
+2019-4-28 17:49:58	test	remove file
+2019-4-28 17:49:59	test	ls
+2019-4-28 17:50:7	huang	pwd
+2019-4-28 17:50:9	huang	ls
+2019-4-28 17:50:13	huang	ls
+2019-4-28 17:50:17	huang	cd 2019_h
+2019-4-28 17:50:18	huang	ls
+2019-4-28 17:50:19	huang	pwd
+2019-4-28 17:50:22	test	ls
+2019-4-28 17:50:23	test	pwd
+2019-4-28 17:50:33	huang	puts file
+2019-4-28 17:50:35	huang	ls
+2019-4-28 17:50:53	huang	pwd
+2019-4-28 17:50:54	huang	ls
+2019-4-28 17:50:57	huang	pwd
+2019-4-28 17:50:59	huang	pwd
+2019-4-28 17:51:5	huang	cd ..
+2019-4-28 17:51:6	huang	ls
+2019-4-28 17:51:15	huang	cd file_h
+2019-4-28 17:51:16	huang	ls
+2019-4-28 17:51:21	huang	remove file
+2019-4-28 17:51:27	test	ls
+2019-4-28 17:51:30	test	remove fiile
+2019-4-28 17:51:34	test	remove file
+2019-4-28 17:51:35	test	ls
+2019-4-28 17:51:37	test	pwd
+2019-4-28 17:51:43	test	pwd
+2019-4-28 17:51:48	test	cd ..
+2019-4-28 17:51:49	test	ls
+2019-4-28 17:51:57	test	cd 2019
+2019-4-28 17:51:58	test	ls
+2019-4-28 17:51:59	test	wpd
+2019-4-28 17:51:59	test	comand error,Please enter the comand again
+2019-4-28 17:52:1	test	pwd
+2019-4-28 17:52:6	test	puts file
+2019-4-28 17:52:9	test	ls
+2019-4-28 17:52:10	test	pwd
+2019-4-28 17:52:11	test	ls
+2019-4-28 17:52:18	huang	ls
+2019-4-28 17:52:23	huang	d
+2019-4-28 17:52:23	huang	comand error,Please enter the comand again
+2019-4-28 17:52:25	huang	pwd
+2019-4-28 17:52:36	test	pwd
+2019-4-28 17:52:39	test	ls
+2019-4-28 17:52:42	test	remove file
+2019-4-28 17:52:43	test	ls
+2019-4-28 17:52:45	test	pwd
+2019-4-28 17:52:54	huang	pwd
+2019-4-28 17:52:59	huang	puts file
+2019-4-28 17:53:0	huang	ls
+2019-4-28 17:53:2	huang	pwd
+2019-4-28 17:53:7	test	ls
+2019-4-28 17:53:8	test	wd
+2019-4-28 17:53:8	test	comand error,Please enter the comand again
+2019-4-28 17:53:9	test	pwd
+2019-4-28 17:53:10	test	ls
+2019-4-28 22:33:50	test	quit
+2019-4-28 22:33:53	huang	quit
+2019-4-28 22:39:59	huang	ls
+2019-4-28 22:40:1	huang	pwd
+2019-4-28 22:40:6	huang	ls
+2019-4-28 22:40:13	huang	cdcd file_h
+2019-4-28 22:40:13	huang	comand error,Please enter the comand again
+2019-4-28 22:40:15	huang	lls
+2019-4-28 22:40:15	huang	comand error,Please enter the comand again
+2019-4-28 22:40:17	huang	ls
+2019-4-28 22:40:23	huang	cd file_h
+2019-4-28 22:40:26	huang	lsls
+2019-4-28 22:40:26	huang	comand error,Please enter the comand again
+2019-4-28 22:40:35	huang	ls
+2019-4-28 22:40:37	huang	pwd
+2019-4-28 22:40:40	huang	ls
+2019-4-28 22:40:50	huang	ls
+2019-4-28 22:40:54	huang	pwd
+2019-4-28 22:41:8	test	ls
+2019-4-28 22:41:10	test	pwd
+2019-4-28 22:41:12	test	ls
+2019-4-28 22:41:16	test	cd file_t
+2019-4-28 22:41:18	test	ls
+2019-4-28 22:41:20	test	pwd
+2019-4-28 22:41:24	huang	ls
+2019-4-28 22:41:27	huang	gets file
+2019-4-28 22:41:33	test	lls
+2019-4-28 22:41:33	test	comand error,Please enter the comand again
+2019-4-28 22:41:35	test	ls
+2019-4-28 22:41:39	test	ls
+2019-4-28 22:41:41	test	pwd
+2019-4-28 22:42:5	huang	ls
+2019-4-28 22:44:3	huang	exit
+2019-4-28 22:44:14	test	exit
+2019-4-28 22:44:22	cheng	ls
+2019-4-28 22:44:23	cheng	pwd
+2019-4-28 22:44:27	cheng	ls
+2019-4-28 22:44:29	cheng	cd file
+2019-4-28 22:44:30	cheng	pwd
+2019-4-28 22:44:31	cheng	ls
+2019-4-28 22:46:29	cheng	quit
+2019-4-28 22:46:58	huang	quit

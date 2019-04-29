@@ -41,7 +41,7 @@
 #define THREAD_ERROR_CHECK(ret,funcname) {if (ret!=0){printf("%s failed,%ld\n",funcname,ret);}}
 #define	ERROR_CHECK(ret,retval,funcname) {if(retval==ret){perror(funcname);return -1;}}
 
-
+#define PATH "/home/xuyouzhi/Netv1.2/client"
 typedef struct{
     pid_t pid;
     int fd;
