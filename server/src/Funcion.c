@@ -75,6 +75,10 @@ int Function(int new_fd)
               char currentpath[1024]={0};
               path_query(user,currentpath);
               chdir(currentpath);
+              recvCycle(new_fd,(char*)&datalen,sizeof(int));
+              memset(buf,0,sizeof(buf));
+              recvCycle(new_fd,buf,datalen);
+              printf("md5Value=%s\n",buf);
               recvFile(new_fd);
               pthread_mutex_unlock(&mutex);
           }

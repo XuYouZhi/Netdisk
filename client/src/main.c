@@ -1,4 +1,5 @@
 #include "../include/func.h"
+#include "../include/md5.h"
 int main(int argc,char *argv[])
 {
     int ret;
@@ -132,10 +133,30 @@ begin:
             //如果服务器端应该有客户端上床过相同 md5的文件，
             //可以通过做硬链的方式，实现秒传。
             //秒传部分注意对进度条打印部分的处理
+            ;       //此处加一个分号的目的是增加一个空语句
+            //不加分号，会报错，a label can only be part of a statement and a declaration is not a statement
+            printf("this is puts parts\n");
+            char md5Str[MD5_STR_LEN+1];    //用于存储32位的文件 md5值
+            printf("comand2=%s\n",comand2);
+            char buffer[1000]={0};
+            // 切换到待上传文件所在的 目录
+             sprintf(buffer,"%s/%s",PATH,"UpAndDownLoad");
+             chdir(buffer);
+            ret=Compute_file_md5(comand2,md5Str);
+            if (0==ret)
+            {
+                printf("[file-%s] md5 value:\n",comand2);
+                printf("%s\n",md5Str);
+            }
             
-            
-
-
+            //采用小火车方式，将待上传文件的 md5码值传给服务器
+            t.datalen=strlen(md5Str);
+            strcpy(t.buf,md5Str);
+            ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
+            if (-1==ret)
+            {
+                printf("failed to send md5Value.\n");
+            }
             //如果服务器端没有存相同md5表的文件，这才真正上传文件
             ret= tranFile(socketFd,comand2);//comand2为文件名
             if (-1==ret)
