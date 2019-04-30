@@ -80,7 +80,7 @@ int tranFile(int socketFd,char *fileName)
          printf("\n+-Done\n");
          t.datalen=0;
          sendCycle(socketFd,(char*)&t,4);//发送文件发送结束标志
-          progress_destroy(&bar);
+         progress_destroy(&bar);
          close(fd);
     }
      else           //文件小于100M，则采用循环发送的方式

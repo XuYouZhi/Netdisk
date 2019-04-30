@@ -1,5 +1,7 @@
 #include "../include/func.h"
 #include "../include/md5.h"
+#include "../include/progress.h"            //秒传部分需要打印100%进度条,
+                                            //故主函数中也包含此头文件
 int main(int argc,char *argv[])
 {
     int ret;
@@ -140,14 +142,17 @@ begin:
             printf("comand2=%s\n",comand2);
             char buffer[1000]={0};
             // 切换到待上传文件所在的 目录
-             sprintf(buffer,"%s/%s",PATH,"UpAndDownLoad");
-             chdir(buffer);
+            sprintf(buffer,"%s/%s",PATH,"UpAndDownLoad");
+            chdir(buffer);
             ret=Compute_file_md5(comand2,md5Str);
             if (0==ret)
             {
                 printf("[file-%s] md5 value:\n",comand2);
                 printf("%s\n",md5Str);
             }
+           // recvCycle(socketFd,(char*)&dataLen,sizeof(int));
+           // recvCycle(socketFd,buf,dataLen);
+           // printf("buf=%s\n",buf);
             
             //采用小火车方式，将待上传文件的 md5码值传给服务器
             t.datalen=strlen(md5Str);
@@ -157,11 +162,40 @@ begin:
             {
                 printf("failed to send md5Value.\n");
             }
-            //如果服务器端没有存相同md5表的文件，这才真正上传文件
-            ret= tranFile(socketFd,comand2);//comand2为文件名
-            if (-1==ret)
+           
+            recvCycle(socketFd,(char*)&flag,sizeof(int));
+            printf("puts part,flag=%d\n",flag);
+            if (-1==flag)       //返回值为-1,说明server 端无对应 md5所对应的文件
             {
-                printf("puts error\n");
+                //如果服务器端没有存相同md5表的文件，这才真正上传文件
+                 ret= tranFile(socketFd,comand2);//comand2为文件名
+                 if (-1==ret)
+                 {
+                     printf("puts error\n");
+                 }
+            }
+            else
+            {
+                //flag 为0，说明 server 端已经有上传过此 md5码对应的文件
+                //此时只需要将待上传文件的文件名发送给服务端，便于服务端制作硬链接
+                 t.datalen=strlen(comand2);
+                 strcpy(t.buf,comand2);
+                 ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
+                 if (-1==ret)
+                 {
+                     return -1;
+                 }
+                 recvCycle(socketFd,(char*)&dataLen,sizeof(int));
+                 printf("dataLen=%d\n",dataLen);
+                 if (1==dataLen)
+                 {
+                     //秒传部分，客户端打印100%进度条
+                     progress_t bar;
+                     progress_init(&bar, "",50, PROGRESS_CHR_STYLE);
+                     progress_show(&bar,50/50.0f);
+                     printf("\n+-Done\n");
+                     progress_destroy(&bar);
+                 }
             }
             break;
         case 3:             //this is gets function

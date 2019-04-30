@@ -65,7 +65,8 @@ int lsFunction(char *argv,int new_fd,char *user);
 int pwdFunction(int new_fd,char *user);
 int cdFunc(char* user,char *path,char *homePath,char *Home);
 int tranFile(int new_fd,char *fileName);
-int recvFile(int new_fd);
+//int recvFile(int new_fd);
+int recvFile(int socketFd,char *fileName);
 int remove_dir(const char *dir);
 //int remove_dir(const char *dir,char* user);
 //int readConf(char *path,char *ip,char *port);
@@ -79,5 +80,9 @@ int path_insert(char *username,char* currentPath);
 int path_query(char *username,char *currentPath);
 int path_query1(char *username);
 int path_update(char *username,char* currentPath);
+int file_insert(char* fileName,char* filePath,char* md5Val);
+int fileNum_update(char *md5Val,char select);
+int file_delete();
+int file_query(char* md5Val,char* oldPath);
 
 #endif

@@ -187,7 +187,7 @@ int readConf(char *path,char *ip,char *port,int* threadNum,int* capacity)
 }
 
 
-int recvFile(int socketFd)
+int recvFile(int socketFd,char *fileName)
 {
 
     int ret,dataLen;
@@ -195,6 +195,7 @@ int recvFile(int socketFd)
     //接收文件名
     recvCycle(socketFd,(char*)&dataLen,sizeof(int));
     recvCycle(socketFd,buf,dataLen);
+    strcpy(fileName,buf);       //文件名以指针的形式传回
     //接收文件大小
     off_t fileSize;
     recvCycle(socketFd,(char*)&dataLen,sizeof(int));

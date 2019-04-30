@@ -28,8 +28,10 @@ create table fileMd5
 (id int primary key not null auto_increment,
  filename varchar(50) not null, filePath varchar(1000) not null,
  md5 varchar(100) not null);
-
-
+#后续因为代码逻辑需要，我往 fileMd5表中新增加了一列，语句如下
+#fileNum 的数值表示 指向此 md5码所对应的文件的链接数
+alter table fileMd5 add column fileNum int default 0;
+alter table fileMd5 drop column fileNum;    #我后来发现我快传部分是通过
 curPath
 +------------------------------------+
 | userid |    username   |   path    |
