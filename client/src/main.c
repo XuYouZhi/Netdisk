@@ -204,18 +204,20 @@ begin:
             {
                 return -1;
             }
+            printf("current path=%s\n",getcwd(NULL,0));
 
             //下载文件时涉及到断点续传问题，得先判断本地文件是否存在，如果存在则得将本地文件的大小发送给服务器
             chdir("UpAndDownLoad");         //切换至本地下载目录
             ret=access(comand2,F_OK);
-                dataLen=ret;
-                // 通过ret 返回值向服务器报告本地是否存在待下载文件
-                ret=sendCycle(socketFd,(char*)&dataLen,sizeof(int));
-                printf("dataLen=%d\n",dataLen);
-                if (-1==ret)
-                {
-                    return -1;
-                }
+            printf("ret=%d\n",ret);
+            dataLen=ret;
+            // 通过ret 返回值向服务器报告本地是否存在待下载文件
+            ret=sendCycle(socketFd,(char*)&dataLen,sizeof(int));
+            printf("dataLen=%d\n",dataLen);
+            if (-1==ret)
+            {
+                return -1;
+            }
             if (0==dataLen)
             {
                 //如果本地存在文件，则应该将本地文件的大小传递给服务器
