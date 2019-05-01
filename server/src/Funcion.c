@@ -1,6 +1,7 @@
 #include "../include/factory.h"
 #include "../include/func.h"
 #include "../include/work_que.h"
+#include "../include/md5.h"
 
 int Function(int new_fd)
 {
@@ -132,6 +133,11 @@ int Function(int new_fd)
               chdir(currentpath);
               recvCycle(new_fd,(char*)&datalen,sizeof(int));
               recvCycle(new_fd,buf,datalen);
+              char md5Str[33]={0};
+              Compute_file_md5(buf,md5Str);
+              printf("md5Str=%s\n",md5Str);
+              fileNum_update(md5Str,'-');
+              file_delete();
               remove_dir(buf);
               pthread_mutex_unlock(&mutex);
               ERROR_CHECK(ret,-1,"remove");
