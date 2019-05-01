@@ -64,7 +64,6 @@ int fileNum_update(char *md5Val,char select)        //此处的 select 字符可
 }
 
 
-
 int file_delete()
 {
 	MYSQL *conn;
@@ -149,54 +148,3 @@ int file_query(char* md5Val,char* oldPath)
 	mysql_close(conn);
 	return 0;
 }
-
-//int file_update(int argc,char* argv[])
-//{
-//	if(argc!=2)
-//	{
-//		printf("error args\n");
-//		return -1;
-//	}
-//	MYSQL *conn;
-//	MYSQL_RES *res;
-//	MYSQL_ROW row;
-//	char* server="localhost";
-//	char* user="root";
-//	char* password="123";
-//	char* database="test";
-//	char query[200]="update Person set LastName='";
-//	sprintf(query,"%s%s%s",query,argv[1],"' where personID=5");
-//	puts(query);
-//	int t,r;
-//	conn=mysql_init(NULL);
-//	if(!mysql_real_connect(conn,server,user,password,database,0,NULL,0))
-//	{
-//		printf("Error connecting to database:%s\n",mysql_error(conn));
-//	}else{
-//		printf("Connected...\n");
-//	}
-//	t=mysql_query(conn,query);
-//	if(t)
-//	{
-//		printf("Error making query:%s\n",mysql_error(conn));
-//	}else{
-//		printf("update success\n");
-//	}
-//	mysql_close(conn);
-//	return 0;
-//}
-
-//int main()
-//{
-//   // char *fileName="file";
-//   // char *filePath="/home/xuyouzhi/Netv1.2/server/Home/huang";
-//   // char *md5Val="6f5902ac237024bdd0c176cb93063dc4";
-//   // file_insert(fileName,filePath,md5Val);
-//    //fileNum_Update("6f5902ac237024bdd0c176cb93063dc4",'-');
-//   // char oldPath[1000]={0};
-//   // int ret=file_query("aaf7c9fb85ac29d8956cf132201aec70",oldPath);
-//   // printf("oldPath=%s\n",oldPath);
-//   // printf("ret=%d\n",ret);
-//    file_delete();
-//    return 0;
-//}

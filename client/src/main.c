@@ -137,9 +137,9 @@ begin:
             //秒传部分注意对进度条打印部分的处理
             ;       //此处加一个分号的目的是增加一个空语句
             //不加分号，会报错，a label can only be part of a statement and a declaration is not a statement
-            printf("this is puts parts\n");
+         //   printf("this is puts parts\n");
             char md5Str[MD5_STR_LEN+1];    //用于存储32位的文件 md5值
-            printf("comand2=%s\n",comand2);
+          //  printf("comand2=%s\n",comand2);
             char buffer[1000]={0};
             // 切换到待上传文件所在的 目录
             sprintf(buffer,"%s/%s",PATH,"UpAndDownLoad");
@@ -147,12 +147,9 @@ begin:
             ret=Compute_file_md5(comand2,md5Str);
             if (0==ret)
             {
-                printf("[file-%s] md5 value:\n",comand2);
-                printf("%s\n",md5Str);
+               // printf("[file-%s] md5 value:\n",comand2);
+               // printf("%s\n",md5Str);
             }
-           // recvCycle(socketFd,(char*)&dataLen,sizeof(int));
-           // recvCycle(socketFd,buf,dataLen);
-           // printf("buf=%s\n",buf);
             
             //采用小火车方式，将待上传文件的 md5码值传给服务器
             t.datalen=strlen(md5Str);
@@ -164,7 +161,7 @@ begin:
             }
            
             recvCycle(socketFd,(char*)&flag,sizeof(int));
-            printf("puts part,flag=%d\n",flag);
+//            printf("puts part,flag=%d\n",flag);
             if (-1==flag)       //返回值为-1,说明server 端无对应 md5所对应的文件
             {
                 //如果服务器端没有存相同md5表的文件，这才真正上传文件
@@ -245,6 +242,12 @@ begin:
             {
                 return -1;
             }
+            recvCycle(socketFd,(char*)&flag,sizeof(int));
+            printf("remove part,flag=%d\n",flag);
+            if (-1==flag)
+            {
+                printf("remove %s error\n",comand2);
+            }
             break;
         case 5:                 //this is pwd function
             while (1)
@@ -255,7 +258,7 @@ begin:
                 if (0==dataLen)
                 {
                     break;
-                }
+                 }
                 recvCycle(socketFd,buf,dataLen);
                 char temp[50]={0};
                 strcpy(temp,"/");

@@ -72,23 +72,23 @@ int Function(int new_fd)
           }
           else if (!strcmp(comand,"puts"))
           {
-              pthread_mutex_t mutex;
-              pthread_mutex_init(&mutex,NULL);
-              pthread_mutex_lock(&mutex);
               //接收客户端发送过来的md5值
               recvCycle(new_fd,(char*)&datalen,sizeof(int));
               memset(buf,0,sizeof(buf));
               recvCycle(new_fd,buf,datalen);
-              printf("md5Value=%s\n",buf);
+             // printf("md5Value=%s\n",buf);
               strcpy(md5Value,buf);
               ret=file_query(buf,oldPath);      // 如果已经上传过相同md5码文件,
               //ret 也应该作为返回值返回给客户端
               //  t.datalen=sizeof(ret);
               //  memcpy(t.buf,&ret,sizeof(int));
               //  sendCycle(new_fd,(char*)&t,4+t.datalen);
-              printf("ret=%d\n",ret);
+             // printf("ret=%d\n",ret);
               sendCycle(new_fd,(char*)&ret,sizeof(int));
             
+              pthread_mutex_t mutex;
+              pthread_mutex_init(&mutex,NULL);
+              pthread_mutex_lock(&mutex);
               char currentpath[1024]={0};        //切换到当前用户所在的目录
               path_query(user,currentpath);
               chdir(currentpath);
@@ -96,11 +96,11 @@ int Function(int new_fd)
               {//返回值为-1，说明没有用户上传过 此 md5码所对应的文件
                  char fileName[100]={0};                //此为正常上传文件部分
                  recvFile(new_fd,fileName);             //fileName通过指针的形式作为返回值
-                 printf("fileName=%s\n",fileName);
+                // printf("fileName=%s\n",fileName);
                  //将此 md5记录到数据库中
                  char filePath[1024]={0};
                  sprintf(filePath,"%s/%s",currentpath,fileName);
-                 printf("filePath 1=%s\n",filePath);
+                 //printf("filePath 1=%s\n",filePath);
                  file_insert(fileName,filePath,buf);    //将刚刚上传的文件md5值插入数据库中
                  fileNum_update(buf,'+');           //将 fileNum 值加1
               }
@@ -112,10 +112,10 @@ int Function(int new_fd)
                  memset(buf,0,sizeof(buf));
                  recvCycle(new_fd,(char*)&datalen,sizeof(int));
                  recvCycle(new_fd,buf,datalen);
-                 printf("fileName=%s\n",buf);
+                 //printf("fileName=%s\n",buf);
                  char filePath[1024]={0};
                  sprintf(filePath,"%s/%s",currentpath,buf);
-                 printf("filePath 2=%s\n",filePath);
+                 //printf("filePath 2=%s\n",filePath);
                  link(oldPath,filePath);        //调用库函数制作硬链接
                  int success=1;         //告知客户端硬链接制作完成
                  sendCycle(new_fd,(char*)&success,sizeof(int));
@@ -134,19 +134,22 @@ int Function(int new_fd)
               recvCycle(new_fd,(char*)&datalen,sizeof(int));
               recvCycle(new_fd,buf,datalen);
               char md5Str[33]={0};
-              Compute_file_md5(buf,md5Str);
-              printf("md5Str=%s\n",md5Str);
-              fileNum_update(md5Str,'-');
+              Compute_file_md5(buf,md5Str);     //计算待删除文件的md5值
+              //printf("md5Str=%s\n",md5Str);
+              fileNum_update(md5Str,'-');       //更新数据库中的记录
               file_delete();
-              remove_dir(buf);
-              pthread_mutex_unlock(&mutex);
+              ret=remove_dir(buf);          //删除服务器端用户对应的文件，如果是目录，则需要递归删除
               ERROR_CHECK(ret,-1,"remove");
+              //通知客户端删除成功, 因为服务器端计算文件的md5时间较长，
+              //客户端如果时序关系跟服务器端对不上，会对客户端的后续操作造成影响
+              sendCycle(new_fd,(char*)&ret,sizeof(int));
+              pthread_mutex_unlock(&mutex);
           }
          else if (!strcmp(comand,"mkdir"))
          {
              recvCycle(new_fd,(char*)&datalen,sizeof(int));
              recvCycle(new_fd,buf,datalen);
-             printf("buf=%s\n",buf);
+             //printf("buf=%s\n",buf);
              mkdirFunction(buf,user);
          }
          else if (!strcmp(comand,"exit"))
