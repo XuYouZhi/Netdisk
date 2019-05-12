@@ -368,15 +368,12 @@ int tranFile(int new_fd,char *fileName)
     {   
         tmp=buf.st_size;        //将 tmp 重新设置为文件大小，后续的操作重新下载文件
     }
-    memcpy(t.buf,&tmp,sizeof(buf.st_size));
+    memcpy(t.buf,&tmp,sizeof(buf.st_size));     //发送文件大小给客户端
     ret=sendCycle(new_fd,(char*)&t,4+t.datalen);
     if(-1==ret)
     {
         return -1;
     }
-    off_t ptrPos=0;//记录目前mmap指针的偏移
-    char *pMap=mmap(NULL,tmp,PROT_READ,MAP_SHARED,fd,0);
-    ERROR_CHECK(pMap,(char*)-1,"mmap");	
     //发送文件内容给客户端
     // 小于100M 普通循环发送
      char buffer[1000];
@@ -407,35 +404,34 @@ int tranFile(int new_fd,char *fileName)
         }
     }
     //文件大于100M用 mmap 方式发送
-    else {
+    else 
+    {
         printf("fileSize more than 100M\n");
-       if(tmp>1000)
-          {
-              while(ptrPos+1000<tmp)
-              {
-                  memcpy(t.buf,pMap+ptrPos,sizeof(t.buf));
-                  t.datalen=1000;
-                  ptrPos=ptrPos+1000;
-                  ret=sendCycle(new_fd,(char*)&t,4+t.datalen);
-                  if(-1==ret)
-                  {
-                      return -1;
-                  }
-              }
-              t.datalen=tmp-ptrPos;
-          }else{
-              t.datalen=tmp;
-          }
-          //最后一个发送内容的列车
-          memcpy(t.buf,pMap+ptrPos,t.datalen);
-          ret=sendCycle(new_fd,(char*)&t,4+t.datalen);
-          if(-1==ret)
-          {
-              return -1;
-          }
-          munmap(pMap,tmp);       //解除 mmap 映射
-          t.datalen=0;
-          sendCycle(new_fd,(char*)&t,4);//发送文件发送结束标志
+        off_t ptrPos=0;//记录目前mmap指针的偏移
+        char *pMap=mmap(NULL,tmp,PROT_READ,MAP_SHARED,fd,0);
+        ERROR_CHECK(pMap,(char*)-1,"mmap");	
+        while(ptrPos+1000<tmp)
+        {
+            memcpy(t.buf,pMap+ptrPos,sizeof(t.buf));
+            t.datalen=1000;
+            ptrPos=ptrPos+1000;
+            ret=sendCycle(new_fd,(char*)&t,4+t.datalen);
+            if(-1==ret)
+            {
+                return -1;
+            }
+        }
+        t.datalen=tmp-ptrPos;
+        //最后一个发送内容的列车
+        memcpy(t.buf,pMap+ptrPos,t.datalen);
+        ret=sendCycle(new_fd,(char*)&t,4+t.datalen);
+        if(-1==ret)
+        {
+            return -1;
+        }
+        munmap(pMap,tmp);       //解除 mmap 映射
+        t.datalen=0;
+        sendCycle(new_fd,(char*)&t,4);//发送文件发送结束标志
     }
     return 0;
 }
