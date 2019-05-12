@@ -34,6 +34,7 @@
 #include <string.h>
 #include <crypt.h>
 #include <shadow.h>
+#include <pthread.h>
 #include <unistd.h>
 //#include <openssl/md5.h>
 #include <memory.h>

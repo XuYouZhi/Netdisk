@@ -1,13 +1,17 @@
 #include "../include/func.h"
 
-int logFunction(int new_fd,char *user)
+int logFunction(int new_fd,char *user)  //user作为传出参数
 {
     Train t;
     char path[1024]={0};
     char flag=0;
     int ret;
+
+login:
     recvCycle(new_fd,&flag,sizeof(char));
-    //printf("flag=%c\n",flag);
+    printf("logFunction part,flag=%c\n",flag);
+login1:
+    ;           //分号的作用是增加一句空语句，不然会报错
     char salt[20]={0};
     int dataLen;
     char buf[1000]={0};
@@ -17,7 +21,6 @@ int logFunction(int new_fd,char *user)
     int count=0;
     if ('y'==flag||'Y'==flag)       //登录部分代码逻辑
     {
-login:
        memset(salt,0,sizeof(salt));
        memset(userName,0,sizeof(userName));
        memset(buf,0,sizeof(buf));
@@ -29,7 +32,7 @@ login:
        strcpy(user,buf);
        strcpy(userName2,userName);
        my_query("salt",buf);    //查询数据库中 username 账户对应的 salt 值
-      // printf("salt=%s\n",buf);
+       //printf("salt=%s\n",buf);
        //将salt发送给客户端
         t.datalen=strlen(buf);
         strcpy(t.buf,buf);
@@ -81,7 +84,7 @@ login:
             ++count;                    //允许三次输入密码错误
             if (count<3)
             {
-                goto login; 
+                goto login1; 
             }
             if (count>=3)
             {
@@ -117,7 +120,8 @@ login:
         chdir(path);             //切换到home目录下面
         mkdir(userName,0777);        //创建当前用户的小家
         chdir(userName);        //切换至当前用户下的home目录下面
-        goto login;
+        flag='y';
+        goto login1;
     }
     return 0;
 }

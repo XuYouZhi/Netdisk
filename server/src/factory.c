@@ -17,7 +17,7 @@ void* clientFunction(void *p)
 		pthread_mutex_unlock(&pq->mutex);
 		if(!getSuccess)
 		{
-			Function(pcur->new_fd);
+			Function2(pcur->new_fd);
 			free(pcur);
 		}
 	}

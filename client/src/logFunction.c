@@ -34,7 +34,14 @@ char* encryptPasswd(char *salt,char *password)
 char* logFunction1(int socketFd)        //本函数的参数为 sfd
 {
     int ret;
+    //int select;
     char flag=0;
+   // select=0;           //select=0表示登陆或注册功能
+  //  ret=sendCycle(socketFd,(char*)&select,sizeof(int));
+  //  if (-1==ret)
+  //  {
+  //      printf("send select %d to server error\n",select);
+  //  }
     printf("直接登录请输入y  注册账号请输入 r\n");
     scanf("%c",&flag);
     if ('r'==flag||'R'==flag||'y'==flag||'Y'==flag)
@@ -52,6 +59,7 @@ char* logFunction1(int socketFd)        //本函数的参数为 sfd
     int dataLen;
     char buf[100]={0};
     static int count=0;
+    
     if ('y'==flag||'Y'==flag)       //登录部分逻辑
     {
 login2:
@@ -119,7 +127,7 @@ login1:
         strcpy(ch[2],getpass("请确定密码:"));
         if (strcmp(ch[1],ch[2])!=0)
         {
-            printf("两次输入的密码不一致!,请重新输入\n");
+            printf("两次输入的密码不一致,请重新输入!\n");
             goto login1;
         }
         strcpy(password,ch[1]);
@@ -140,7 +148,17 @@ login1:
        //printf("After encrypt,password=%s\n",password);
         strcpy(t.buf,password);
         t.datalen=strlen(password);
-        sendCycle(socketFd,(char*)&t,4+t.datalen);
+        ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
+        if (-1==ret)
+        {
+            printf("register part,send encryptPasswd to server erro\n");
+        }
+       // flag='y';
+       // ret=sendCycle(socketFd,(char*)&flag,sizeof(char));
+       // if (-1==ret)
+       // {
+       //     printf("send flag to server after register one account\n");
+       // }
         goto login2;            //注册完毕，转为登录
     }
     return ch[0];           //返回登录的用户名

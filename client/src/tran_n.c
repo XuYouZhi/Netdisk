@@ -2,6 +2,7 @@
 //循环发送,退出机制
 int sendCycle(int fd,char* p,int sendLen)
 {
+
 	int total=0;
 	int ret;
 	while(total<sendLen)
