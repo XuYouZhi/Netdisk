@@ -56,8 +56,6 @@ int tranFile(int socketFd,char *fileName)
                  }
                  if (ptrPos-beforeSize>=fileSlice)
                  {
-                     //     printf("\r%5.2f%s",(double)ptrPos/buf.st_size*100,"%");
-                     //   fflush(stdout);
                      progress_show(&bar,i/50.0f);
                      ++i;
                      beforeSize=ptrPos;

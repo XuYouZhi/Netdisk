@@ -44,3 +44,19 @@ create table curPath(
 id int primary key auto_increment,#auto_increment只是MySQL特有的
 userName varchar(30),
 path varchar(1000));
+
+TokenValue 表
++----+----------+-------------+
+| id | userName | tokenval    |                                                 |
++----+----------+-------------+
+|    |          |             |  
++-----------------------------+
+|    |          |             |  
++-----------------------------+
+ 创建语句
+create table TokenValue(
+    id int primary key auto_increment,
+    username varchar(30),
+    tokenVal varchar(1000)
+);
+    

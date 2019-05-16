@@ -1,6 +1,7 @@
 #include "../include/func.h"
 #include "../include/factory.h"
 #include "../include/work_que.h"
+int currentSize=0;              //用于记录连接上的客户端数
 int main(int argc,char *argv[])
 {
     int ret,retVal;
@@ -60,7 +61,9 @@ int main(int argc,char *argv[])
                      ++j;               //出队的时候，j 需要-1, 想想怎么实现
                  }
                  else if (funcSelect=='s')
-                 {
+                 { 
+                     currentSize++;             //登陆服务器是属于瞬时响应命令
+                     printf("The number of client connections is %d\n",currentSize);
                      printf("part 1,j=%d\n",j);
                         event.events=EPOLLIN|EPOLLET;
                         event.data.fd=new_fd[j];
@@ -103,6 +106,9 @@ int main(int argc,char *argv[])
                           retVal=Function1(new_fd[k]);
                           if (-1==retVal)
                           {
+                              //此时有客户端离开，即为断开连接
+                              --currentSize;
+                              printf("one client quit,The current number of client connections is %d\n",currentSize);
                               // 将new_fd[j]从 epoll 监控序列中去除
                                ret=epoll_ctl(epfd,EPOLL_CTL_DEL,new_fd[k],&event);
                                printf("part 2,epoll_ctl ret=%d\n",ret);
@@ -112,7 +118,6 @@ int main(int argc,char *argv[])
                           }
                      }
                  }
-
             }
        }
     }

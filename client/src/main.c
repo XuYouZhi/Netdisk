@@ -131,7 +131,7 @@ void *thread1Func(void *p)
                          // return -1;
                       }
                       recvCycle(socketFd1,(char*)&dataLen,sizeof(int));
-                      //printf("dataLen=%d\n",dataLen);
+                      printf("dataLen=%d\n",dataLen);
                       if (1==dataLen)
                       {
                           //秒传部分，客户端打印100%进度条
@@ -161,7 +161,7 @@ void *thread1Func(void *p)
                  dataLen=ret;
                  // 通过ret 返回值向服务器报告本地是否存在待下载文件
                  ret=sendCycle(socketFd1,(char*)&dataLen,sizeof(int));
-                 //printf("dataLen=%d\n",dataLen);
+                 printf("dataLen=%d\n",dataLen);
                  if (-1==ret)
                  {
                      //return -1;
@@ -178,7 +178,7 @@ void *thread1Func(void *p)
                       }
                       struct stat file_sta;
                       fstat(fd,&file_sta);
-                      //printf("%ld\n",file_sta.st_size);
+                      printf("%ld\n",file_sta.st_size);
                      printf("%s exits\n",pNode->comand2);
                      ret=sendCycle(socketFd1,(char*)&file_sta.st_size,sizeof(file_sta.st_size));
                      if (-1==ret)
@@ -187,7 +187,7 @@ void *thread1Func(void *p)
                          printf("send local fileSize to server error\n");
                      }
                  }
-                 //printf("dataLen=%d\n",dataLen);
+                 printf("dataLen=%d\n",dataLen);
                  recvFile(socketFd1,dataLen);
          }
    }
@@ -237,7 +237,7 @@ login:
     strcpy(userName,logFunction1(socketFd));         
    // printf("userName=%s\n",userName);
     memset(buf,0,sizeof(buf));
-    recvCycle(socketFd,(char*)&dataLen,sizeof(int));    //接收服务端发送的token值
+    recvCycle(socketFd,(char*)&dataLen,sizeof(int));
     recvCycle(socketFd,buf,dataLen);
   //  printf("buf=%s\n",buf);
     strcpy(token,buf);
@@ -362,11 +362,7 @@ begin:
             // printf("Node.token=%s\n",Node.token);
              //此处创建一个线程用于上传和下载文件，
              ret=pthread_create(&thread1,NULL,thread1Func,&Node);  //此处会往子线程中传入一个结构体参数
-             if (0!=ret)
-             {
-                 printf("create one new thread of puts or gets function\n");
-             }
-             //printf("pthread_create ret=%d\n",ret);
+             printf("pthread_create ret=%d\n",ret);
         }
         else 
         {
@@ -412,7 +408,6 @@ begin:
                      recvCycle(socketFd,buf,dataLen);
                      printf("%s\n",buf);
                  }
-<<<<<<< HEAD
                  break;
              case 2:         //this is puts function before;
                  break;
@@ -425,78 +420,9 @@ begin:
                  if (-1==ret)
                  {
                      return -1;
-=======
-            }
-            break;
-        case 3:             //this is gets function
-            memset(t.buf,0,sizeof(t.buf));          //发送文件名给服务器
-            t.datalen=strlen(comand2);
-            strcpy(t.buf,comand2);
-            ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
-            if (-1==ret)
-            {
-                return -1;
-            }
-            printf("current path=%s\n",getcwd(NULL,0));
-
-            //下载文件时涉及到断点续传问题，得先判断本地文件是否存在，如果存在则得将本地文件的大小发送给服务器
-            chdir("UpAndDownLoad");         //切换至本地下载目录
-            ret=access(comand2,F_OK);
-            printf("ret=%d\n",ret);
-            dataLen=ret;
-            // 通过ret 返回值向服务器报告本地是否存在待下载文件
-            ret=sendCycle(socketFd,(char*)&dataLen,sizeof(int));
-            printf("dataLen=%d\n",dataLen);
-            if (-1==ret)
-            {
-                return -1;
-            }
-            if (0==dataLen)
-            {
-                //如果本地存在文件，则应该将本地文件的大小传递给服务器
-                 int fd=open(comand2,O_RDONLY);
-                 ERROR_CHECK(fd,-1,"fopen");
-                 struct stat file_sta;
-                 fstat(fd,&file_sta);
-                 printf("%ld\n",file_sta.st_size);
-                printf("%s exits\n",comand2);
-                ret=sendCycle(socketFd,(char*)&file_sta.st_size,sizeof(file_sta.st_size));
-                if (-1==ret)
-                {
-                    return -1;
-                }
-            }
-            printf("dataLen=%d\n",dataLen);
-            recvFile(socketFd,dataLen);
-            break;
-        case 4:             //this is remove function
-            t.datalen=strlen(comand2);
-            strcpy(t.buf,comand2);
-            ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
-            if (-1==ret)
-            {
-                return -1;
-            }
-            recvCycle(socketFd,(char*)&flag,sizeof(int));
-            printf("remove part,flag=%d\n",flag);
-            if (-1==flag)
-            {
-                printf("remove %s error\n",comand2);
-            }
-            break;
-        case 5:                 //this is pwd function
-            while (1)
-            {
-            //    printf("this is pwd part\n");
-                memset(buf,0,sizeof(buf));
-                recvCycle(socketFd,(char*)&dataLen,sizeof(int));
-                if (0==dataLen)
-                {
-                    break;
->>>>>>> 44a6e8f5bf33013bb74026ba2f0c99f8db55136d
                  }
                  recvCycle(socketFd,(char*)&flag,sizeof(int));
-                 //printf("remove part,flag=%d\n",flag);
+                 printf("remove part,flag=%d\n",flag);
                  if (-1==flag)
                  {
                      printf("remove %s error\n",comand2);
@@ -504,10 +430,10 @@ begin:
                  break;
              case 5:                 //this is pwd function
                  while (1)
-                 { 
-        
+                 {
                  //    printf("this is pwd part\n");
                      memset(buf,0,sizeof(buf));
+                     recvCycle(socketFd,(char*)&dataLen,sizeof(int));
                      if (0==dataLen)
                      {
                          break;

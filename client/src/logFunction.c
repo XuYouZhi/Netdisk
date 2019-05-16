@@ -34,14 +34,7 @@ char* encryptPasswd(char *salt,char *password)
 char* logFunction1(int socketFd)        //本函数的参数为 sfd
 {
     int ret;
-    //int select;
     char flag=0;
-   // select=0;           //select=0表示登陆或注册功能
-  //  ret=sendCycle(socketFd,(char*)&select,sizeof(int));
-  //  if (-1==ret)
-  //  {
-  //      printf("send select %d to server error\n",select);
-  //  }
     printf("直接登录请输入y  注册账号请输入 r\n");
     scanf("%c",&flag);
     if ('r'==flag||'R'==flag||'y'==flag||'Y'==flag)
@@ -75,7 +68,6 @@ login2:
         memset(buf,0,sizeof(buf));
         recvCycle(socketFd,(char*)&dataLen,sizeof(int));
         recvCycle(socketFd,buf,dataLen);
-       // printf("salt=%s\n",buf);
         memset(ch[1],0,sizeof(ch[1]));
         strcpy(ch[1],getpass("请输入密码: "));
         //根据用户输入的密码和从服务器端发送过来的salt值加密得到密文passwword 
@@ -97,7 +89,6 @@ login2:
             printf("密码错误或用户名错误!\n");
             sleep(1);
             ++count;
-           //printf("count=%d\n",count);
             if (count<3)
             {//允许输错三次密码
                 goto login2;
@@ -131,7 +122,6 @@ login1:
             goto login1;
         }
         strcpy(password,ch[1]);
-       //printf("before encrypt=%s\n",password);
         printf("注册成功!\n");
       //发送用户名给服务器
         t.datalen=strlen(ch[0]);
@@ -145,7 +135,6 @@ login1:
         sendCycle(socketFd,(char*)&t,4+t.datalen);
         //发送密码加密后的密文给服务器
         strcpy(password,encryptPasswd(salt,password));
-       //printf("After encrypt,password=%s\n",password);
         strcpy(t.buf,password);
         t.datalen=strlen(password);
         ret=sendCycle(socketFd,(char*)&t,4+t.datalen);
@@ -153,12 +142,6 @@ login1:
         {
             printf("register part,send encryptPasswd to server erro\n");
         }
-       // flag='y';
-       // ret=sendCycle(socketFd,(char*)&flag,sizeof(char));
-       // if (-1==ret)
-       // {
-       //     printf("send flag to server after register one account\n");
-       // }
         goto login2;            //注册完毕，转为登录
     }
     return ch[0];           //返回登录的用户名
